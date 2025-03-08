@@ -375,7 +375,7 @@ def threadjob(task,taskid,cpu)
             output.call("\033[31;1;4m%s vs. %s; more precise, less precise, incomparable: apron (%.4f,%.4f,%.4f)\033[0m\n" % [aname1, aname2, better, worse, incomparable])
           end
         else
-          system("cd #{dirname} && #{taskset} #{$goblint} --goblint-dir #{intermediatedir} --conf #{$goblint_conf} #{aparam} #{$common} #{filename} #{p.params} --set dbg.level debug --enable dbg.compare_runs.eqsys --enable dbg.compare_runs.global #{$print_diff} #{$globfilter} --compare_runs #{run1} #{run2} > \"#{subcomparefile}\" 2>&1")
+          system("cd #{dirname} && #{taskset} #{$goblint} --goblint-dir #{intermediatedir} --conf #{$goblint_conf} #{aparam} #{$common} #{filename} #{p.params} --set dbg.level debug --enable dbg.compare_runs.eqsys --enable solvers.td3.narrow-sides.stats  --enable dbg.compare_runs.global #{$print_diff} #{$globfilter} --compare_runs #{run1} #{run2} > \"#{subcomparefile}\" 2>&1")
           status = $?.exitstatus
           if status != 0 then
             # This can happen, e.g. when the run itself failed. Or when the comparison runs out of memory
