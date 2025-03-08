@@ -6,3 +6,4 @@ There are two branches of the `analyzer` repository of relevance here:
 
 TODO:
 - `bench.txt` should only include the terminating ones, provide a separate file for those that do not
+- Run `update_bench_fullpreccomb.rb` with `--idead` and `--priv-only` for Plot 4
