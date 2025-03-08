@@ -294,7 +294,7 @@ def threadjob(task,taskid,cpu)
       dump_flag = "--save_run"
     end
     #Add --set cilout /dev/null to ignore CIL output.
-    cmd = "cd #{dirname} && ulimit -m #{$ulimit} && #{taskset} timeout #{$hard_timeout} #{$goblint} --goblint-dir #{intermediatedir} --conf #{$goblint_conf} --set dbg.timeout #{$timeout} #{aparam} #{$common} #{filename} #{p.params} --enable allglobs --enable dbg.timing.enabled --enable warn.debug -v #{dump_flag} #{precfile} 1>#{outfile} 2>&1"
+    cmd = "cd #{dirname} && ulimit -m #{$ulimit} && #{taskset} timeout #{$hard_timeout} #{$goblint} --goblint-dir #{intermediatedir} --conf #{$goblint_conf} --set dbg.timeout #{$timeout} #{aparam} #{$common} #{filename} #{p.params} --enable allglobs --enable solvers.td3.narrow-sides.stats --enable dbg.timing.enabled --enable warn.debug -v #{dump_flag} #{precfile} 1>#{outfile} 2>&1"
 
     system(cmd)
     status = $?.exitstatus
