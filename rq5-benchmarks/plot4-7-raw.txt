@@ -1,0 +1,522 @@
+Found 39 tasks
+[INFO] Completed tasks: 1/39
+[INFO] Completed tasks: 2/39
+[INFO] Completed tasks: 3/39
+[INFO] Completed tasks: 4/39
+[INFO] Completed tasks: 5/39
+[INFO] Completed tasks: 6/39
+[INFO] Completed tasks: 7/39
+[INFO] Completed tasks: 8/39
+[INFO] Completed tasks: 9/39
+[INFO] Completed tasks: 10/39
+[INFO] Completed tasks: 11/39
+[INFO] Completed tasks: 12/39
+[INFO] Completed tasks: 13/39
+[INFO] Completed tasks: 14/39
+[INFO] Completed tasks: 15/39
+[INFO] Completed tasks: 16/39
+[INFO] Completed tasks: 17/39
+[INFO] Completed tasks: 18/39
+[INFO] Completed tasks: 19/39
+[INFO] Completed tasks: 20/39
+[INFO] Completed tasks: 21/39
+[INFO] Completed tasks: 22/39
+[INFO] Completed tasks: 23/39
+[INFO] Completed tasks: 24/39
+[INFO] Completed tasks: 25/39
+[WARNING] Comparison failed!
+[WARNING] Comparison failed!
+[WARNING] Comparison failed!
+[WARNING] Comparison failed!
+[WARNING] Comparison failed!
+[WARNING] Comparison failed!
+[INFO] Completed tasks: 26/39
+concrat
+Analysing zmap.c ()
+  base     -- Done! 27.638998 s
+  ours     -- Done! 28.472891 s
+  ours-bot -- Done! 29.874912 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 778/780/939/2794[0m
+  apinis   -- Done! 32.376086 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0268,0.0000); total (0.0000,0.0006,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0268,0.0000); total (0.0000,0.0006,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0134,0.0067,0.0067); total (0.0257,0.0232,0.0005)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0268,0.0000,0.0000); total (0.0262,0.0227,0.0005)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0268,0.0000,0.0000); total (0.0262,0.0227,0.0005)[0m
+Analysing wrk.c ()
+  base     -- Done! 232.806284 s
+  ours     -- Done! 229.881298 s
+  ours-bot -- Done! 237.682013 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 442/442/442/740[0m
+  apinis   -- Done! 225.921365 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0222,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0222,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0444,0.0222,0.0000); total (0.0002,0.0001,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0222,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0444,0.0000,0.0000); total (0.0002,0.0000,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0667,0.0000,0.0000); total (0.0003,0.0000,0.0000)[0m
+Analysing vanitygen.c ()
+  base     -- Done! 18.688411 s
+  ours     -- Done! 18.691329 s
+  ours-bot -- Done! 20.086091 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 118/122/118/683[0m
+  apinis   -- Done! 19.810334 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0476,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0476,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.1667,0.0476,0.0000); total (0.0209,0.0022,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.1667,0.0000,0.0000); total (0.0209,0.0021,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.1667,0.0000,0.0000); total (0.0209,0.0021,0.0000)[0m
+Analysing uthash.c ()
+  base     -- Done! 3.288544 s
+  ours     -- Done! 3.388000 s
+  ours-bot -- Done! 3.433217 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 0/0/0/5[0m
+  apinis   -- Done! 3.258770 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.1667,0.0000,0.0000); total (0.3761,0.0000,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.1667,0.0000,0.0000); total (0.3761,0.0000,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.1667,0.0000,0.0000); total (0.3761,0.0000,0.0000)[0m
+Analysing sysbench-fixed.c ()
+  base     -- Done! 19.875341 s
+  ours     -- Done! 27.377326 s
+  ours-bot -- Done! 28.731401 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 400/400/461/1626[0m
+  apinis   -- Done! 31.607635 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0510,0.0000); total (0.0010,0.0023,0.0001)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0510,0.0000); total (0.0010,0.0023,0.0001)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0102,0.0612,0.0000); total (0.0024,0.0023,0.0001)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0102,0.0102,0.0000); total (0.0024,0.0021,0.0001)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0102,0.0102,0.0000); total (0.0024,0.0021,0.0001)[0m
+Analysing snoopy.c ()
+  base     -- Done! 0.864661 s
+  ours     -- Done! 0.902355 s
+  ours-bot -- Done! 0.921096 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 0/0/0/335[0m
+  apinis   -- Done! 0.901967 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.1176,0.0000); total (0.0000,0.0005,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.1176,0.0000); total (0.0000,0.0005,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.1176,0.1176,0.0000); total (0.0228,0.0005,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0588,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.1176,0.0000,0.0000); total (0.0228,0.0000,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.1765,0.0000,0.0000); total (0.0231,0.0000,0.0000)[0m
+Analysing siege.c ()
+  base     -- Done! 43.826911 s
+  ours     -- Done! 44.194884 s
+  ours-bot -- Done! 50.774201 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 755/755/808/3198[0m
+  apinis   -- Done! 88.122531 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0143,0.0000); total (0.0000,0.0000,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0143,0.0000); total (0.0000,0.0000,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0429,0.0143,0.0000); total (0.0001,0.0000,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0429,0.0000,0.0000); total (0.0001,0.0000,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0429,0.0000,0.0000); total (0.0001,0.0000,0.0000)[0m
+Analysing shairport.c ()
+  base     -- Done! 75.040391 s
+  ours     -- Done! 80.232861 s
+  ours-bot -- Done! 107.090382 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 3510/3510/3572/5607[0m
+  apinis   -- Done! 137.556782 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0317,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0317,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0794,0.0212,0.0000); total (0.0060,0.0016,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0212,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0899,0.0106,0.0000); total (0.0061,0.0015,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.1058,0.0000,0.0053); total (0.0062,0.0014,0.0001)[0m
+Analysing procDump.c ()
+  base     -- Done! 72.568504 s
+  ours     -- Done! 78.922446 s
+  ours-bot -- Done! 99.359643 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 496/496/496/1890[0m
+  apinis   -- Done! 110.120718 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.1101,0.1284,0.0000); total (0.0081,0.0010,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.1101,0.2202,0.0000); total (0.0081,0.0013,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.1101,0.0917,0.0000); total (0.0086,0.0008,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.1009,0.0000); total (0.0000,0.0009,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.1193,0.0367,0.0000); total (0.0009,0.0006,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.2202,0.0000,0.0000); total (0.0013,0.0000,0.0000)[0m
+Analysing pingfs.c ()
+  base     -- Done! 3.426387 s
+  ours     -- Done! 3.569127 s
+  ours-bot -- Done! 4.041254 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 125/125/125/353[0m
+  apinis   -- Done! 3.911245 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0508,0.0000); total (0.0000,0.0010,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0847,0.0000); total (0.0000,0.0015,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0339,0.0678,0.0000); total (0.0233,0.0216,0.0017)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0678,0.0000); total (0.0000,0.0010,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0339,0.0508,0.0169); total (0.0235,0.0214,0.0019)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.1017,0.0000,0.0000); total (0.0245,0.0206,0.0017)[0m
+Analysing pianobar.c ()
+  base     -- Done! 111.186630 s
+  ours     -- Done! 111.927630 s
+  ours-bot -- Done! 136.787014 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 1129/1130/1662/2634[0m
+  apinis   -- Done! 184.362916 s
+Comparing...
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0222,0.0000); total (0.0000,0.0000,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0444,0.0000,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0222,0.0000); total (0.0000,0.0000,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0444,0.0000,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0667,0.0000,0.0000); total (0.0000,0.0002,0.0000)[0m
+Analysing nnn.c ()
+  base     -- Done! 127.654342 s
+  ours     -- Done! 136.711423 s
+  ours-bot -- Done! 166.056032 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 261/264/265/947[0m
+  apinis   -- Done! 136.625253 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0163,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0244,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0650,0.0081,0.0000); total (0.0124,0.0105,0.0002)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0163,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0650,0.0000,0.0000); total (0.0124,0.0104,0.0002)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0813,0.0000,0.0000); total (0.0124,0.0104,0.0002)[0m
+Analysing mirai-fixed.c ()
+  base     -- Done! 5.632875 s
+  ours     -- Done! 5.863055 s
+  ours-bot -- Done! 5.897043 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 4/4/4/97[0m
+  apinis   -- Done! 5.894207 s
+Comparing...
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0833,0.0000,0.0000); total (0.0006,0.0000,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0833,0.0000,0.0000); total (0.0006,0.0000,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0833,0.0000,0.0000); total (0.0006,0.0000,0.0000)[0m
+Analysing libfreenect.c ()
+  base     -- Done! 0.826378 s
+  ours     -- Done! 0.894401 s
+  ours-bot -- Done! 0.907320 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 0/0/0/17[0m
+  apinis   -- Done! 0.781925 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0645,0.0000); total (0.0000,0.0032,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0645,0.0000); total (0.0000,0.0032,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0000,0.0645,0.0000); total (0.0000,0.0032,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0000,0.0323,0.0000); total (0.0000,0.0016,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0000,0.0323,0.0000); total (0.0000,0.0016,0.0000)[0m
+Analysing libfaketime.c ()
+  base     -- Done! 0.227850 s
+  ours     -- Done! 0.232077 s
+  ours-bot -- Done! 0.230167 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 0/0/0/4[0m
+  apinis   -- Done! 0.221178 s
+Comparing...
+Analysing libaco.c ()
+  base     -- Done! 12.251827 s
+  ours     -- Done! 12.742747 s
+  ours-bot -- Done! 13.498618 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 136/136/136/223[0m
+  apinis   -- Done! 13.687228 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.1111,0.0000); total (0.0000,0.0005,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.1111,0.0000); total (0.0000,0.0005,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0000,0.1111,0.0000); total (0.0000,0.0005,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0556,0.0000); total (0.0000,0.0003,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0556,0.0000,0.0000); total (0.0003,0.0000,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0556,0.0000,0.0000); total (0.0003,0.0000,0.0000)[0m
+Analysing level-ip.c ()
+  base     -- Done! 5.447541 s
+  ours     -- Done! 5.710656 s
+  ours-bot -- Done! 6.005184 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 138/138/138/510[0m
+  apinis   -- Done! 5.518722 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0758,0.0000); total (0.0000,0.0008,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.1212,0.0000); total (0.0000,0.0040,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0455,0.0909,0.0000); total (0.0005,0.0010,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0606,0.0000); total (0.0000,0.0034,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0758,0.0455,0.0000); total (0.0008,0.0005,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.1364,0.0152,0.0000); total (0.0042,0.0002,0.0000)[0m
+Analysing klib.c ()
+  base     -- Done! 1.826891 s
+  ours     -- Done! 1.915088 s
+  ours-bot -- Done! 3.070278 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 95/95/95/117[0m
+  apinis   -- Done! 1.752840 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0769,0.0000); total (0.0000,0.0015,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0769,0.0000); total (0.0000,0.0015,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.1538,0.0769,0.0000); total (0.0903,0.0792,0.0014)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.1538,0.0000,0.0000); total (0.0903,0.0778,0.0014)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.1538,0.0000,0.0000); total (0.0903,0.0778,0.0014)[0m
+Analysing fzy.c ()
+  base     -- Done! 69.083019 s
+  ours     -- Done! 68.823920 s
+  ours-bot -- Done! 84.189932 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 201/202/204/342[0m
+  apinis   -- Done! 52.033748 s
+Comparing...
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0333,0.0000); total (0.0000,0.0003,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0333,0.0000,0.0000); total (0.0003,0.0000,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0333,0.0000); total (0.0000,0.0003,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0333,0.0000,0.0000); total (0.0003,0.0000,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0667,0.0000,0.0000); total (0.0007,0.0000,0.0000)[0m
+Analysing easyLogger.c ()
+  base     -- Done! 5.960051 s
+  ours     -- Done! 6.369983 s
+  ours-bot -- Done! 8.535656 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 445/445/445/762[0m
+  apinis   -- Done! 7.920844 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0714,0.0000); total (0.0000,0.0003,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.1071,0.0000); total (0.0000,0.0005,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0000,0.1071,0.0000); total (0.0000,0.0005,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0714,0.0000); total (0.0000,0.0003,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0357,0.0357,0.0357); total (0.0002,0.0002,0.0002)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.1071,0.0000,0.0000); total (0.0005,0.0000,0.0000)[0m
+Analysing dump1090.c ()
+  base     -- Done! 6.598432 s
+  ours     -- Done! 6.835907 s
+  ours-bot -- Done! 7.124539 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 76/76/76/284[0m
+  apinis   -- Done! 7.530250 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.1875,0.0000); total (0.0000,0.0005,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.1875,0.0000); total (0.0000,0.0005,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.1250,0.1250,0.0625); total (0.0392,0.0267,0.0006)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.1875,0.0000,0.0000); total (0.0393,0.0263,0.0005)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.1875,0.0000,0.0000); total (0.0393,0.0263,0.0005)[0m
+Analysing dnspod-sr-fixed.c ()
+  base     -- Done! 150.201840 s
+  ours     -- Done! 158.473947 s
+  ours-bot -- Done! 437.895369 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 4020/4028/5782/6459[0m
+  apinis   -- Done! 898.520164 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0299,0.0896,0.0000); total (0.0061,0.0068,0.0001)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0299,0.1194,0.0000); total (0.0061,0.0069,0.0001)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.1791,0.0000,0.0000); total (0.0252,0.0121,0.0002)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0299,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.2388,0.0000,0.0000); total (0.0247,0.0111,0.0001)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.2687,0.0000,0.0000); total (0.0248,0.0111,0.0001)[0m
+Analysing cava.c ()
+  base     -- Done! 9.668480 s
+  ours     -- Done! 9.811878 s
+  ours-bot -- Done! 11.140721 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 142/142/145/283[0m
+  apinis   -- Done! 11.670669 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0423,0.0000); total (0.0064,0.0121,0.0002)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0423,0.0000); total (0.0064,0.0169,0.0002)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0141,0.0282,0.0141); total (0.0002,0.0135,0.0002)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0000,0.0000); total (0.0000,0.0048,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0423,0.0000,0.0000); total (0.0070,0.0161,0.0002)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0423,0.0000,0.0000); total (0.0070,0.0114,0.0002)[0m
+Analysing cThreadPool.c ()
+  base     -- Done! 0.480342 s
+  ours     -- Done! 0.492827 s
+  ours-bot -- Done! 0.511790 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 16/16/16/47[0m
+  apinis   -- Done! 0.488486 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0909,0.0000); total (0.0000,0.0017,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.1818,0.0000); total (0.0000,0.0035,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.2727,0.0000,0.0000); total (0.0288,0.0169,0.0017)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0909,0.0000); total (0.0000,0.0017,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.3636,0.0000,0.0000); total (0.0305,0.0169,0.0017)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.4545,0.0000,0.0000); total (0.0321,0.0169,0.0017)[0m
+Analysing brubeck.c ()
+  base     -- Done! 4.933564 s
+  ours     -- Done! 4.920267 s
+  ours-bot -- Done! 5.259766 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 197/197/197/747[0m
+  apinis   -- Done! 5.704798 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0000,0.0000); total (0.0001,0.0000,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0000,0.0000); total (0.0001,0.0000,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0638,0.0000,0.0000); total (0.0003,0.0000,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0638,0.0000,0.0000); total (0.0003,0.0001,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0638,0.0000,0.0000); total (0.0003,0.0001,0.0000)[0m
+Analysing axel.c ()
+  base     -- Done! 150.285853 s
+  ours     -- Timeout!
+  ours-bot -- Failed!
+  apinis   -- Failed!
+Comparing...
+[31;1;4mbase vs. ours; COMPARISON FAILED![0m
+[31;1;4mbase vs. ours-bot; COMPARISON FAILED![0m
+[31;1;4mbase vs. apinis; COMPARISON FAILED![0m
+[31;1;4mours vs. ours-bot; COMPARISON FAILED![0m
+[31;1;4mours vs. apinis; COMPARISON FAILED![0m
+[31;1;4mours-bot vs. apinis; COMPARISON FAILED![0m
+[INFO] Group concrat completed!
+[INFO] Completed tasks: 27/39
+[INFO] Completed tasks: 28/39
+[INFO] Completed tasks: 29/39
+[INFO] Completed tasks: 30/39
+[INFO] Completed tasks: 31/39
+[INFO] Completed tasks: 32/39
+[INFO] Completed tasks: 33/39
+[INFO] Group SV-COMP (ordered by logical LoC within this group) completed!
+SV-COMP (ordered by logical LoC within this group)
+Analysing linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-2.i ()
+  base     -- Done! 13.465593 s
+  ours     -- Done! 13.736887 s
+  ours-bot -- Done! 16.247759 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 1905/1905/1905/2578[0m
+  apinis   -- Done! 14.093160 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0159,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0476,0.0000); total (0.0000,0.0005,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0317,0.0317,0.0000); total (0.0091,0.0091,0.0007)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0317,0.0000); total (0.0000,0.0003,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0317,0.0317,0.0000); total (0.0091,0.0091,0.0007)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0635,0.0000,0.0000); total (0.0094,0.0088,0.0007)[0m
+Analysing linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-1.i ()
+  base     -- Done! 12.155078 s
+  ours     -- Done! 12.464677 s
+  ours-bot -- Done! 14.598045 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 1591/1591/1591/2253[0m
+  apinis   -- Done! 12.641713 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0159,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0476,0.0000); total (0.0000,0.0005,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0317,0.0317,0.0000); total (0.0092,0.0092,0.0007)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0317,0.0000); total (0.0000,0.0003,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0317,0.0317,0.0000); total (0.0092,0.0092,0.0007)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0635,0.0000,0.0000); total (0.0096,0.0089,0.0007)[0m
+Analysing linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.i ()
+  base     -- Done! 21.400424 s
+  ours     -- Done! 21.839664 s
+  ours-bot -- Done! 30.715463 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 3631/3631/3631/4650[0m
+  apinis   -- Done! 23.860959 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0133,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0267,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0000,0.0133,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0133,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0133,0.0133,0.0000); total (0.0001,0.0001,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0267,0.0000,0.0000); total (0.0002,0.0000,0.0000)[0m
+Analysing linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.i ()
+  base     -- Done! 14.744579 s
+  ours     -- Done! 15.243638 s
+  ours-bot -- Done! 17.806928 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 787/787/799/1299[0m
+  apinis   -- Done! 12.212600 s
+Comparing...
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0227,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0227,0.0227,0.0000); total (0.0002,0.0002,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0227,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0227,0.0227,0.0000); total (0.0002,0.0002,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0455,0.0000,0.0000); total (0.0004,0.0000,0.0000)[0m
+Analysing linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.i ()
+  base     -- Done! 5.245283 s
+  ours     -- Done! 5.076481 s
+  ours-bot -- Done! 5.431148 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 583/604/583/1161[0m
+  apinis   -- Done! 4.502759 s
+Comparing...
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0182,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0182,0.0182,0.0000); total (0.0078,0.0002,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0182,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0182,0.0182,0.0000); total (0.0078,0.0002,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0364,0.0000,0.0000); total (0.0080,0.0000,0.0000)[0m
+Analysing linux-3.14--drivers--usb--misc--adutux.ko.cil.i ()
+  base     -- Done! 2.647398 s
+  ours     -- Done! 2.684758 s
+  ours-bot -- Done! 3.409104 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 318/318/318/632[0m
+  apinis   -- Done! 2.238489 s
+Comparing...
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0600,0.0000); total (0.0000,0.0009,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0000,0.0600,0.0000); total (0.0000,0.0009,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0600,0.0000); total (0.0000,0.0009,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0000,0.0600,0.0000); total (0.0000,0.0009,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0400,0.0000,0.0000); total (0.0006,0.0000,0.0000)[0m
+Analysing linux-3.14--drivers--usb--misc--iowarrior.ko.cil.i ()
+  base     -- Done! 2.377851 s
+  ours     -- Done! 2.440273 s
+  ours-bot -- Done! 2.728175 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 395/395/395/713[0m
+  apinis   -- Done! 2.122408 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0370,0.0185,0.0000); total (0.0006,0.0003,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0185,0.0741,0.0000); total (0.0003,0.0012,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0741,0.0741,0.0000); total (0.0198,0.0198,0.0012)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0741,0.0000); total (0.0000,0.0012,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0556,0.0741,0.0185); total (0.0195,0.0198,0.0015)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.1111,0.0000,0.0185); total (0.0204,0.0186,0.0015)[0m
+[INFO] Completed tasks: 34/39
+[INFO] Group Larger programs completed!
+Larger programs
+Analysing ypbind_comb.c ()
+  base     -- Done! 45.962576 s
+  ours     -- Done! 45.209246 s
+  ours-bot -- Done! 89.386815 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 2510/2510/2524/3404[0m
+  apinis   -- Done! 200.727372 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.2823,0.0161,0.0000); total (0.0019,0.0001,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.2823,0.0161,0.0000); total (0.0019,0.0001,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.3145,0.0000,0.0161); total (0.0448,0.0101,0.0002)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0403,0.0000,0.0081); total (0.0429,0.0101,0.0001)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0403,0.0000,0.0081); total (0.0429,0.0101,0.0001)[0m
+[INFO] Completed tasks: 35/39
+[INFO] Completed tasks: 36/39
+[INFO] Completed tasks: 37/39
+[INFO] Completed tasks: 38/39
+[INFO] Completed tasks: 39/39
+[INFO] Group Locksmith POSIX Apps completed!
+Locksmith POSIX Apps
+Analysing smtprc_comb.c ()
+  base     -- Done! 23.590206 s
+  ours     -- Done! 25.090152 s
+  ours-bot -- Done! 46.153486 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 633/633/633/895[0m
+  apinis   -- Done! 95.244876 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.0385,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0385,0.0000); total (0.0000,0.0001,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0000,0.0385,0.0000); total (0.0000,0.0001,0.0000)[0m
+Analysing ctrace_comb.c ()
+  base     -- Done! 1.846200 s
+  ours     -- Done! 1.931513 s
+  ours-bot -- Done! 2.015858 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 7/7/7/72[0m
+  apinis   -- Done! 2.371598 s
+Comparing...
+Analysing pfscan_comb.c ()
+  base     -- Done! 1.025286 s
+  ours     -- Done! 1.133209 s
+  ours-bot -- Done! 1.154736 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 16/16/16/58[0m
+  apinis   -- Done! 1.184905 s
+Comparing...
+[31;1;4mbase vs. ours; more precise, less precise, incomparable: globals (0.0000,0.1333,0.0000); total (0.0370,0.0748,0.0034)[0m
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.1333,0.0000); total (0.0370,0.0748,0.0034)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0000,0.1000,0.0000); total (0.0000,0.0021,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0667,0.0000,0.0000); total (0.0734,0.0370,0.0034)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0667,0.0000,0.0000); total (0.0734,0.0370,0.0034)[0m
+Analysing knot_comb.c ()
+  base     -- Done! 3.044380 s
+  ours     -- Done! 3.124484 s
+  ours-bot -- Done! 6.020894 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 113/113/131/338[0m
+  apinis   -- Done! 3.211571 s
+Comparing...
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0208,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.0208,0.0000,0.0000); total (0.0151,0.0135,0.0002)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0208,0.0000); total (0.0000,0.0002,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.0208,0.0000,0.0000); total (0.0151,0.0135,0.0002)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.0417,0.0000,0.0000); total (0.0153,0.0135,0.0002)[0m
+Analysing aget_comb.c ()
+  base     -- Done! 2.395417 s
+  ours     -- Done! 2.467786 s
+  ours-bot -- Done! 2.661597 s
+[31;1;4m Botified contextualized functions (still bot,botified,dead,total): 23/23/23/100[0m
+  apinis   -- Done! 2.433789 s
+Comparing...
+[31;1;4mbase vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0303,0.0000); total (0.0000,0.0004,0.0000)[0m
+[31;1;4mbase vs. apinis; more precise, less precise, incomparable: globals (0.2121,0.0000,0.0000); total (0.0029,0.0000,0.0000)[0m
+[31;1;4mours vs. ours-bot; more precise, less precise, incomparable: globals (0.0000,0.0303,0.0000); total (0.0000,0.0004,0.0000)[0m
+[31;1;4mours vs. apinis; more precise, less precise, incomparable: globals (0.2121,0.0000,0.0000); total (0.0029,0.0000,0.0000)[0m
+[31;1;4mours-bot vs. apinis; more precise, less precise, incomparable: globals (0.2424,0.0000,0.0000); total (0.0033,0.0000,0.0000)[0m

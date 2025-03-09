@@ -50,7 +50,7 @@
      \draw[#1,/tikz/.cd,yshift=-0.25em]
       (0cm,0cm) rectangle (6pt,9pt);},
   ]
-  \foreach \a in {base,ours,ours_bot,apinis}{
+  \foreach \a in {base,ours,ours-bot,apinis}{
     \addplot+ table [y=\a-memory, x expr=\coordindex] {\tabletimingsshort};
   }
   \end{axis}
@@ -70,7 +70,7 @@
     x tick label style={rotate=30,below left},
     enlarge x limits={abs=0.6cm},
   ]
-  \foreach \a in {base,ours,ours_bot,apinis}{
+  \foreach \a in {base,ours,ours-bot,apinis}{
     \addplot+ table [y=\a-memory, x expr=\coordindex] {\tabletimingslong};
   }
   \end{axis}

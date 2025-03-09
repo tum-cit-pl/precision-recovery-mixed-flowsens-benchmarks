@@ -1,0 +1,199 @@
+Locksmith POSIX Apps
+Analysing aget_comb.c (1/39)
+  base     -- Done! 2.371621 s (0.000000) 27.650000 MB
+  ours     -- Done! 2.464015 s (0.000000) 30.860000 MB
+  ours-bot -- Done! 2.612962 s (0.000000) 26.830000 MB
+  apinis   -- Done! 2.388807 s (0.000000) 31.800000 MB
+Analysing knot_comb.c (2/39)
+  base     -- Done! 3.005760 s (0.000000) 46.930000 MB
+  ours     -- Done! 3.030263 s (0.000000) 46.930000 MB
+  ours-bot -- Done! 5.954514 s (0.000000) 53.970000 MB
+  apinis   -- Done! 3.172949 s (0.000000) 46.930000 MB
+Analysing pfscan_comb.c (3/39)
+  base     -- Done! 1.000863 s (0.000000) 20.910000 MB
+  ours     -- Done! 1.084631 s (0.000000) 23.330000 MB
+  ours-bot -- Done! 1.130351 s (0.000000) 20.280000 MB
+  apinis   -- Done! 1.144782 s (0.000000) 23.330000 MB
+Analysing ctrace_comb.c (4/39)
+  base     -- Done! 1.794082 s (0.000000) 31.800000 MB
+  ours     -- Done! 1.897290 s (0.000000) 36.570000 MB
+  ours-bot -- Done! 1.987586 s (0.000000) 36.570000 MB
+  apinis   -- Done! 2.317314 s (0.000000) 36.570000 MB
+Analysing smtprc_comb.c (5/39)
+  base     -- Done! 23.524337 s (0.000000) 230.870000 MB
+  ours     -- Done! 24.468847 s (0.000000) 305.320000 MB
+  ours-bot -- Done! 45.747043 s (0.000000) 132.000000 MB
+  apinis   -- Done! 96.073007 s (0.000000) 265.500000 MB
+Larger programs
+Analysing ypbind_comb.c (6/39)
+  base     -- Done! 42.455978 s (0.000000) 534.030000 MB
+  ours     -- Done! 44.395492 s (0.000000) 614.130000 MB
+  ours-bot -- Done! 84.111755 s (0.000000) 305.320000 MB
+  apinis   -- Done! 198.160375 s (0.000000) 706.250000 MB
+SV-COMP (ordered by logical LoC within this group)
+Analysing linux-3.14--drivers--usb--misc--iowarrior.ko.cil.i (7/39)
+  base     -- Done! 2.354810 s (0.000000) 37.520000 MB
+  ours     -- Done! 2.407399 s (0.000000) 43.150000 MB
+  ours-bot -- Done! 2.641663 s (0.000000) 37.520000 MB
+  apinis   -- Done! 2.130934 s (0.000000) 43.150000 MB
+Analysing linux-3.14--drivers--usb--misc--adutux.ko.cil.i (8/39)
+  base     -- Done! 2.598395 s (0.000000) 43.150000 MB
+  ours     -- Done! 2.693071 s (0.000000) 43.150000 MB
+  ours-bot -- Done! 3.247475 s (0.000000) 43.150000 MB
+  apinis   -- Done! 2.214383 s (0.000000) 43.150000 MB
+Analysing linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.i (9/39)
+  base     -- Done! 4.895239 s (0.000000) 57.060000 MB
+  ours     -- Done! 4.970055 s (0.000000) 65.620000 MB
+  ours-bot -- Done! 5.305116 s (0.000000) 57.060000 MB
+  apinis   -- Done! 4.441654 s (0.000000) 57.060000 MB
+Analysing linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.i (10/39)
+  base     -- Done! 14.814196 s (0.000000) 86.790000 MB
+  ours     -- Done! 15.117798 s (0.000000) 99.810000 MB
+  ours-bot -- Done! 17.087262 s (0.000000) 75.470000 MB
+  apinis   -- Done! 12.168462 s (0.000000) 75.470000 MB
+Analysing linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.i (11/39)
+  base     -- Done! 21.107982 s (0.000000) 200.750000 MB
+  ours     -- Done! 21.577376 s (0.000000) 230.870000 MB
+  ours-bot -- Done! 25.138822 s (0.000000) 174.570000 MB
+  apinis   -- Done! 23.641289 s (0.000000) 200.750000 MB
+Analysing linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-1.i (12/39)
+  base     -- Done! 12.035984 s (0.000000) 114.780000 MB
+  ours     -- Done! 12.320891 s (0.000000) 132.000000 MB
+  ours-bot -- Done! 14.027281 s (0.000000) 99.810000 MB
+  apinis   -- Done! 12.214716 s (0.000000) 114.780000 MB
+Analysing linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-2.i (13/39)
+  base     -- Done! 13.327127 s (0.000000) 132.000000 MB
+  ours     -- Done! 13.578362 s (0.000000) 132.000000 MB
+  ours-bot -- Done! 15.645464 s (0.000000) 114.780000 MB
+  apinis   -- Done! 13.654789 s (0.000000) 114.780000 MB
+concrat
+Analysing axel.c (14/39)
+  base     -- Done! 147.752395 s (0.000000) 1074.120000 MB
+  ours     -- Failed!
+  ours-bot -- Failed!
+  apinis   -- Failed!
+Analysing brubeck.c (15/39)
+  base     -- Done! 4.825165 s (0.000000) 75.470000 MB
+  ours     -- Done! 4.835381 s (0.000000) 75.470000 MB
+  ours-bot -- Done! 5.106964 s (0.000000) 75.470000 MB
+  apinis   -- Done! 5.590345 s (0.000000) 75.470000 MB
+Analysing cThreadPool.c (16/39)
+  base     -- Done! 0.463805 s (0.000000) 14.210000 MB
+  ours     -- Done! 0.483840 s (0.000000) 13.740000 MB
+  ours-bot -- Done! 0.478581 s (0.000000) 13.740000 MB
+  apinis   -- Done! 0.473607 s (0.000000) 14.210000 MB
+Analysing cava.c (17/39)
+  base     -- Done! 9.431659 s (0.000000) 86.790000 MB
+  ours     -- Done! 9.774169 s (0.000000) 86.790000 MB
+  ours-bot -- Done! 11.046475 s (0.000000) 75.470000 MB
+  apinis   -- Done! 11.550186 s (0.000000) 99.810000 MB
+Analysing dnspod-sr-fixed.c (18/39)
+  base     -- Done! 150.077155 s (0.000000) 1235.240000 MB
+  ours     -- Done! 155.685295 s (0.000000) 1420.530000 MB
+  ours-bot -- Done! 423.278581 s (0.000000) 1074.120000 MB
+  apinis   -- Done! 882.198991 s (0.000000) 1633.610000 MB
+Analysing dump1090.c (19/39)
+  base     -- Done! 6.562040 s (0.000000) 87.920000 MB
+  ours     -- Done! 7.020633 s (0.000000) 87.920000 MB
+  ours-bot -- Done! 6.977570 s (0.000000) 87.920000 MB
+  apinis   -- Done! 7.316678 s (0.000000) 87.920000 MB
+Analysing easyLogger.c (20/39)
+  base     -- Done! 5.932126 s (0.000000) 94.400000 MB
+  ours     -- Done! 6.293731 s (0.000000) 108.560000 MB
+  ours-bot -- Done! 7.946119 s (0.000000) 82.090000 MB
+  apinis   -- Done! 7.787342 s (0.000000) 108.560000 MB
+Analysing fzy.c (21/39)
+  base     -- Done! 66.344441 s (0.000000) 6082.770000 MB
+  ours     -- Done! 66.090996 s (0.000000) 6082.770000 MB
+  ours-bot -- Done! 79.229748 s (0.000000) 6082.770000 MB
+  apinis   -- Done! 53.904217 s (0.000000) 6082.770000 MB
+Analysing klib.c (22/39)
+  base     -- Done! 1.809336 s (0.000000) 21.620000 MB
+  ours     -- Done! 1.893858 s (0.000000) 24.860000 MB
+  ours-bot -- Done! 3.060182 s (0.000000) 21.620000 MB
+  apinis   -- Done! 1.721936 s (0.000000) 24.860000 MB
+Analysing level-ip.c (23/39)
+  base     -- Done! 5.097758 s (0.000000) 57.060000 MB
+  ours     -- Done! 5.800249 s (0.000000) 65.620000 MB
+  ours-bot -- Done! 5.912256 s (0.000000) 65.620000 MB
+  apinis   -- Done! 5.393641 s (0.000000) 65.620000 MB
+Analysing libaco.c (24/39)
+  base     -- Done! 12.521477 s (0.000000) 111.910000 MB
+  ours     -- Done! 13.052439 s (0.000000) 128.690000 MB
+  ours-bot -- Done! 13.723939 s (0.000000) 128.690000 MB
+  apinis   -- Done! 13.454268 s (0.000000) 128.690000 MB
+Analysing libfaketime.c (25/39)
+  base     -- Done! 0.228303 s (0.000000) 7.060000 MB
+  ours     -- Done! 0.220265 s (0.000000) 8.120000 MB
+  ours-bot -- Done! 0.216274 s (0.000000) 8.120000 MB
+  apinis   -- Done! 0.210077 s (0.000000) 7.060000 MB
+Analysing libfreenect.c (26/39)
+  base     -- Done! 0.801578 s (0.000000) 14.210000 MB
+  ours     -- Done! 0.881293 s (0.000000) 15.810000 MB
+  ours-bot -- Done! 0.875516 s (0.000000) 15.810000 MB
+  apinis   -- Done! 0.762989 s (0.000000) 13.740000 MB
+Analysing mirai-fixed.c (27/39)
+  base     -- Done! 5.636107 s (0.000000) 30.860000 MB
+  ours     -- Done! 5.789284 s (0.000000) 36.570000 MB
+  ours-bot -- Done! 5.862061 s (0.000000) 36.570000 MB
+  apinis   -- Done! 5.837896 s (0.000000) 35.480000 MB
+Analysing nnn.c (28/39)
+  base     -- Done! 129.082214 s (0.000000) 6082.770000 MB
+  ours     -- Done! 138.644114 s (0.000000) 7143.770000 MB
+  ours-bot -- Done! 163.224721 s (0.000000) 7086.720000 MB
+  apinis   -- Done! 133.636298 s (0.000000) 7263.880000 MB
+Analysing pianobar.c (29/39)
+  base     -- Done! 107.550668 s (0.000000) 614.130000 MB
+  ours     -- Done! 112.187719 s (0.000000) 706.250000 MB
+  ours-bot -- Done! 135.311022 s (0.000000) 614.130000 MB
+  apinis   -- Done! 181.027555 s (0.000000) 812.190000 MB
+Analysing pingfs.c (30/39)
+  base     -- Done! 3.391351 s (0.000000) 46.930000 MB
+  ours     -- Done! 3.553279 s (0.000000) 62.070000 MB
+  ours-bot -- Done! 3.969680 s (0.000000) 53.970000 MB
+  apinis   -- Done! 3.848392 s (0.000000) 62.070000 MB
+Analysing procDump.c (31/39)
+  base     -- Done! 72.971727 s (0.000000) 265.500000 MB
+  ours     -- Done! 77.830402 s (0.000000) 305.320000 MB
+  ours-bot -- Done! 97.311420 s (0.000000) 265.500000 MB
+  apinis   -- Done! 109.435275 s (0.000000) 305.320000 MB
+Analysing shairport.c (32/39)
+  base     -- Done! 73.255604 s (0.000000) 1935.070000 MB
+  ours     -- Done! 81.554860 s (0.000000) 1771.690000 MB
+  ours-bot -- Done! 110.969896 s (0.000000) 2045.710000 MB
+  apinis   -- Done! 137.316294 s (0.000000) 2362.250000 MB
+Analysing siege.c (33/39)
+  base     -- Done! 42.704243 s (0.000000) 534.030000 MB
+  ours     -- Done! 43.184837 s (0.000000) 534.030000 MB
+  ours-bot -- Done! 49.820032 s (0.000000) 534.030000 MB
+  apinis   -- Done! 86.397008 s (0.000000) 534.030000 MB
+Analysing snoopy.c (34/39)
+  base     -- Done! 0.843435 s (0.000000) 24.670000 MB
+  ours     -- Done! 0.877099 s (0.000000) 28.370000 MB
+  ours-bot -- Done! 0.884824 s (0.000000) 28.370000 MB
+  apinis   -- Done! 0.862657 s (0.000000) 28.370000 MB
+Analysing sysbench-fixed.c (35/39)
+  base     -- Done! 19.711951 s (0.000000) 265.500000 MB
+  ours     -- Done! 26.401487 s (0.000000) 265.500000 MB
+  ours-bot -- Done! 27.946328 s (0.000000) 265.500000 MB
+  apinis   -- Done! 30.662811 s (0.000000) 265.500000 MB
+Analysing uthash.c (36/39)
+  base     -- Done! 3.235399 s (0.000000) 18.800000 MB
+  ours     -- Done! 3.397035 s (0.000000) 21.620000 MB
+  ours-bot -- Done! 3.373208 s (0.000000) 21.620000 MB
+  apinis   -- Done! 3.262674 s (0.000000) 21.620000 MB
+Analysing vanitygen.c (37/39)
+  base     -- Done! 18.136877 s (0.000000) 351.130000 MB
+  ours     -- Done! 18.405337 s (0.000000) 351.130000 MB
+  ours-bot -- Done! 19.757292 s (0.000000) 351.130000 MB
+  apinis   -- Done! 19.285974 s (0.000000) 351.130000 MB
+Analysing wrk.c (38/39)
+  base     -- Done! 235.598122 s (0.000000) 7263.880000 MB
+  ours     -- Done! 233.250703 s (0.000000) 7278.830000 MB
+  ours-bot -- Done! 234.645362 s (0.000000) 7263.880000 MB
+  apinis   -- Done! 228.395185 s (0.000000) 7263.880000 MB
+Analysing zmap.c (39/39)
+  base     -- Done! 27.409474 s (0.000000) 464.370000 MB
+  ours     -- Done! 27.779743 s (0.000000) 534.030000 MB
+  ours-bot -- Done! 28.859793 s (0.000000) 464.370000 MB
+  apinis   -- Done! 31.585668 s (0.000000) 534.030000 MB
