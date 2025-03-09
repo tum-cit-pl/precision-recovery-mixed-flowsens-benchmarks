@@ -11,17 +11,24 @@ Steps for reproducing plots `5 & 6`:
     - Change into the analyzer repo, run `git checkout pldi25_eval_runtime` and `make release`
     - From the `rq5-benchmarks`, run `./update_bench_propertimings.rb --i 1 &> plot5-6-raw.txt`
             (By modifying the number supplied after `i`, you can specify that the average of more runs should be taken. To reduce runtimes, we recommend against it when reproducing results)
-    - Run `./runtimes_to_csv.py --mode timing --split 60 plot5-6-raw.txt > plot5-short.csv 2> plot5-long.csv`
+    - For plot 5
+        - Run `./runtimes_to_csv.py --mode timing --split 60 plot5-6-raw.txt > plots/5/plot5-short.csv 2> plots/5/plot5-long.csv`
+        - Run `../helper-scripts/postprocess-csv.py plots/5/plot5-long.csv`
+        - Run `../helper-scripts/postprocess-csv.py plots/5/plot5-short.csv`
+        - Run `./split-out-fails.py plots/5/plot5-long.csv > plots/5/plot5-long-nofails.csv 2> plots/5/plot5long-fails.csv`
+        - `cd plots/4 && pdflatex plot4.tex && cd..`
+
+
 
 
 Steps for reproducing plots `4 & 7`:
     - Change into the analyzer repo, run `git checkout pldi25_eval_stats` and `make release`   (TODO: is prec compare build automatically?)
     - From the `rq5-benchmarks`, run `./update_bench_fullpreccmp.rb --idead --priv-only &> plot4-7-raw.txt`
     - For plot 4:
-        - Run `./prec_to_csv_cumulative.py --mode all --compare glob plot4-7-raw.txt base &> plot4-differences.csv`
-        - Run `../helper-scripts/postprocess-csv.py plot4-differences.csv`
-        - `cd plots && pdflatex plot4.tex && cd..`
-        - The resulting plot is located in `plots/plot4.pdf`
+        - Run `./prec_to_csv_cumulative.py --mode all --compare glob plot4-7-raw.txt base &> plots/4/plot4-differences.csv`
+        - Run `../helper-scripts/postprocess-csv.py plots/4/plot4-differences.csv`
+        - `cd plots/4 && pdflatex plot4.tex && cd..`
+        - The resulting plot is located in `plots/4/plot4.pdf`
 
 
 

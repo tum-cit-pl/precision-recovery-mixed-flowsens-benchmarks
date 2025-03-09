@@ -2,3 +2,7 @@ analyzer/*
 *.aux
 *.log
 *.pdf
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)

@@ -1,0 +1,80 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usetikzlibrary{patterns}
+\usetikzlibrary{calc}
+\colorlet{improved}{green!30}
+\colorlet{worse}{red!85}
+\colorlet{incomparable}{brown!90!white}
+
+\pgfplotscreateplotcyclelist{stackedbar}{
+  {fill=improved},
+  {fill=worse},
+  {fill=incomparable},
+  {preaction={fill, improved}, pattern=north east lines},
+  {preaction={fill, worse}, pattern=north east lines},
+  {preaction={fill, incomparable}, pattern=north east lines},
+  {preaction={fill, improved}, pattern=horizontal lines},
+  {preaction={fill, worse}, pattern=horizontal lines},
+  {preaction={fill, incomparable}, pattern=horizontal lines},
+  {preaction={fill, improved}, pattern=north west lines},
+  {preaction={fill, worse}, pattern=north west lines},
+  {preaction={fill, incomparable}, pattern=north west lines},
+}
+
+\begin{document}
+
+
+\pgfplotstableread[col sep=comma]{plot5-short.csv}{\tabletimingsshortn}
+\begin{tikzpicture}
+  \begin{axis} [
+    name=shorttimings,
+    width=1.8\textwidth,
+    height=6cm,
+    ybar=\pgflinewidth,
+    bar width=4pt,
+    ymin=0,
+    ymax=35,
+    ylabel={analysis duration in [s].},
+    grid=major,
+    grid style={dashed,gray!30},
+    xtick=data,
+    xticklabels from table={\tabletimingsshortn}{file},
+    x tick label style={rotate=30,below left},
+    enlarge x limits={abs=0.6cm},
+    legend entries={base,
+      ours,
+      ours$_{\bot}$,
+      apinis},
+    legend pos=north east,
+    legend image code/.code={%
+     \draw[#1,/tikz/.cd,yshift=-0.25em]
+      (0cm,0cm) rectangle (6pt,9pt);},
+  ]
+  \foreach \a in {base,ours,ours_bot,apinis}{
+    \addplot+ table [y=\a, x expr=\coordindex] {\tabletimingsshortn};
+  }
+  \end{axis}
+  \pgfplotstableread[col sep=comma]{plot5-long-nofails.csv}{\tabletimingslongn}
+  \begin{axis} [
+    at={($(shorttimings.east)+(1cm,0)$)},
+    anchor=west,
+    width=0.8\textwidth,
+    height=6cm,
+    ybar=\pgflinewidth,
+    bar width=4pt,
+    ymin=0,
+    ymax=300,
+    grid=major,
+    grid style={dashed,gray!30},
+    xtick=data,
+    xticklabels from table={\tabletimingslongn}{file},
+    x tick label style={rotate=30,below left},
+    enlarge x limits={abs=0.6cm},
+  ]
+  \foreach \a in {base,ours,ours_bot,apinis}{
+    \addplot+ table [y=\a, x expr=\coordindex] {\tabletimingslongn};
+  }
+  \end{axis}
+\end{tikzpicture}
+\end{document}
