@@ -25,9 +25,7 @@ Steps for reproducing plots `4 & 7`:
     - Change into the analyzer repo, run `git checkout pldi25_eval_stats` and `make release`   (TODO: is prec compare build automatically?)
     - From the `rq5-benchmarks`, run `./update_bench_fullpreccmp.rb --idead --priv-only &> plot4-7-raw.txt`
     - For plot 4:
-        - Run `./prec_to_csv_cumulative.py --mode all --compare glob plot4-7-raw.txt base &> plots/4/plot4-differences.csv`
-        - Run `../helper-scripts/postprocess-csv.py plots/4/plot4-differences.csv`
-        - `cd plots/4 && pdflatex plot4.tex && cd..`
+        - Run `./plot4.sh` (Should this fail to the correct output check the individual steps listed in that file)
         - The resulting plot is located in `plots/4/plot4.pdf`
 
 
