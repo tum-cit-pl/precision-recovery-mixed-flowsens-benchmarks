@@ -259,7 +259,7 @@ def threadjob(task,taskid,cpu)
   #end
   id = 0
   intermediatedir = ".goblint-#{taskid}"
-  
+
   id = id + 1
   filepath = p.path
   dirname = File.dirname(filepath)
@@ -333,17 +333,10 @@ def threadjob(task,taskid,cpu)
         end
       end
       if $idead then
-        bottomized = lines.grep(/Botified contextualized functions: ([0-9]+) botified of ([0-9]+) dead of ([0-9]+) total/) { |x| [$1.to_i,$2.to_i,$3.to_i] }
+        bottomized = lines.grep(/Botified contextualized functions \(still bot,botified,dead,total\): ([0-9]+)\/([0-9]+)\/([0-9]+)\/([0-9]+)/) { |x| [$1.to_i,$2.to_i,$3.to_i,$4.to_i] }
         if bottomized != [] then
           bottomized = bottomized.first
-          output.call("\033[31;1;4mBotified contextualized functions (botified,dead,total): #{bottomized[0]}/#{bottomized[1]}/#{bottomized[2]}\033[0m\n")
-        end
-        omitted = lines.grep(/Omitted contributions: ([0-9]+) still bot of ([0-9]+) omitted of ([0-9]+); ([0-9]+) to dead; ([0-9]+) from dead/) { |x| [$1.to_i,$2.to_i,$3.to_i,$4.to_i,$5.to_i] }
-        if omitted != [] then
-          #om_sb_count,om_count,cs_count = omitted.first
-          #puts "\033[31;1;4mOmitted (bot,revived,total): #{om_sb_count}/#{om_count}/#{cs_count}\033[0m"
-          omitted = omitted.first
-          output.call("\033[31;1;4mOmitted (bot,revived,total): #{omitted[0]}/#{omitted[1]}/#{omitted[2]}; #{omitted[3]} to dead; #{omitted[4]} from dead\033[0m\n")
+          output.call("\033[31;1;4m Botified contextualized functions (still bot,botified,dead,total): #{bottomized[0]}/#{bottomized[1]}/#{bottomized[2]}/#{bottomized[3]}\033[0m\n")
         end
       end
     end
