@@ -12,11 +12,8 @@ Steps for reproducing plots `5 & 6`:
     - From the `rq5-benchmarks`, run `./update_bench_propertimings.rb --i 1 &> plot5-6-raw.txt`
             (By modifying the number supplied after `i`, you can specify that the average of more runs should be taken. To reduce runtimes, we recommend against it when reproducing results)
     - For plot 5
-        - Run `./runtimes_to_csv.py --mode timing --split 60 plot5-6-raw.txt > plots/5/plot5-short.csv 2> plots/5/plot5-long.csv`
-        - Run `../helper-scripts/postprocess-csv.py plots/5/plot5-long.csv`
-        - Run `../helper-scripts/postprocess-csv.py plots/5/plot5-short.csv`
-        - Run `./split-out-fails.py plots/5/plot5-long.csv > plots/5/plot5-long-nofails.csv 2> plots/5/plot5long-fails.csv`
-        - `cd plots/5 && pdflatex plot5.tex && cd..`
+        - Run `./plot5.sh` (Should this fail to the correct output check the individual steps listed in that file)
+        - The resulting plot is located in `plots/5/plot5.pdf`
 
 
 
