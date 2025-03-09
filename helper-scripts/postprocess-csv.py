@@ -19,7 +19,7 @@ replacements = [
     ('zmap.c', 'zmap'),
     ('wrk.c', 'wrk'),
     ('vanitygen.c', 'vanitygen'),
-    ('uthash.h', 'uthash'),
+    ('uthash.c', 'uthash'),
     ('sysbench-fixed.c', 'sysbench-fixed'),
     ('snoopy.c', 'snoopy'),
     ('shairport.c', 'shairport'),
@@ -28,7 +28,7 @@ replacements = [
     ('pianobar.c', 'pianobar'),
     ('nnn.c', 'nnn'),
     ('mirai-fixed.c', 'mirai-fixed'),
-    ('libfreenet.c', 'libfreenet'),
+    ('libfreenect.c', 'libfreenect'),
     ('libfaketime.c', 'libfaketime'),
     ('libaco.c', 'libaco'),
     ('level-ip.c', 'level-ip'),
@@ -40,6 +40,7 @@ replacements = [
     ('cava.c','cava'),
     ('cThreadPool.c','cThreadPool'),
     ('brubeck.c','brubeck'),
+    ('siege.c','siege')
 ]
 
 file = sys.argv[1]
