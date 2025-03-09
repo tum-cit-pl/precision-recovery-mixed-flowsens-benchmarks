@@ -7,6 +7,10 @@ There are two branches of the `analyzer` repository of relevance here:
 In the artifact, `analyzer` is already checked out and dependencies are installed. If not proceed to **General setup of the analyzer** at the bottom.
 
 
+Steps for reproducing the numbers for (RQ4):
+    - Benchexec etc
+
+
 Steps for reproducing plots `4 & 7`:
     - (If not there already): Clone analyzer into top-level directory `git clone git@github.com:goblint/analyzer.git`
     - Change into the analyzer repo, run `git checkout pldi25_eval_stats` and `make release`   (TODO: is prec compare build automatically?)
@@ -14,7 +18,7 @@ Steps for reproducing plots `4 & 7`:
     - For plot 4:
         - Run `./fullpreccmp_to_csv_cumulative.py --mode all --compare glob plot4-7-raw.txt base > plot4-differences.csv`
         - Run `../helper-scripts/postprocess-csv.py plot4-differences.csv`
-        - 
+        -
 
 
 
