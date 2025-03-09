@@ -93,7 +93,7 @@ for file in args.file:
                 analyses.add(analysis_name)
                 case.times[analysis_name] = 'Failed'
                 continue
-            x = re.search(f'Botified contextualized functions \\(still bot,botified,dead,total\\): ([0-9]+)/([0-9]+)/([0-9]+)/([0-9]+)', line)
+            x = re.search(f'Botified contextualized functions \(still bot,botified,dead,total\): ([0-9]+)\/([0-9]+)\/([0-9]+)\/([0-9]+)', line)
             if x != None:
                 case.dead[analysis_name] = (int(x.group(1)), int(x.group(2)), int(x.group(3)), int(x.group(4)))
                 continue
@@ -204,13 +204,12 @@ if mode == "dead":
     print('suite,file,coordindex,' + ','.join(map(lambda a: f"{a}-stillbot,{a}-botified,{a}-dead,{a}-total", analyses_)))
     for index, case in enumerate(cases):
         dead = list()
-        for analysis in analyses_:
-            if not analysis in case.omitted:
-                dead.append('0,0,0,0')
-            else:
-                adead = case.dead[analysis]
-                astillbot,abotified,adead,atotal = adead
-                dead.append(f"{astillbot},{abotified},{adead},{atotal}")
+        analysis = "ours-bot"
+        if not analysis in case.dead:
+            continue
+        adead = case.dead[analysis]
+        astillbot,abotified,adead,atotal = adead
+        dead.append(f"{astillbot},{abotified},{adead},{atotal}")
         print(f'{case.suite},{case.name},{index+1},' + ','.join(dead))
 
 if mode == "omitted":
