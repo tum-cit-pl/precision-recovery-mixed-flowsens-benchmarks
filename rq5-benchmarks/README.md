@@ -14,7 +14,9 @@ Steps for reproducing plots `5 & 6`:
     - For plot 5
         - Run `./plot5.sh` (Should this fail to the correct output check the individual steps listed in that file)
         - The resulting plot is located in `plots/5/plot5.pdf`
-
+    - For plot 6
+        - Run `./plot6.sh` (Should this fail to the correct output check the individual steps listed in that file)
+        - The resulting plot is located in `plots/6/plot6.pdf`
 
 
 
