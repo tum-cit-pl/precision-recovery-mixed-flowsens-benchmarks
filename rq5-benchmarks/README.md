@@ -7,8 +7,6 @@ There are two branches of the `analyzer` repository of relevance here:
 In the artifact, `analyzer` is already checked out and dependencies are installed. If not proceed to **General setup of the analyzer** at the bottom.
 
 
-Steps for reproducing the numbers for (RQ4):
-    - Benchexec etc
 
 
 Steps for reproducing plots `4 & 7`:
