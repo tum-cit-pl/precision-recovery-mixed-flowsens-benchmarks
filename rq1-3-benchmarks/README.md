@@ -1,13 +1,8 @@
-There are two branches of the `analyzer` repository of relevance here:
-
-- `pldi25_eval_runtime` is to be used with `update_bench_propertimings.rb` to obtain reliable runtimes
-
-
-In the artifact, `analyzer` is already checked out and dependencies are installed. If not proceed to **General setup of the analyzer** at the bottom.
-
-
 Steps:
     - Change into the analyzer repo, run `git checkout pldi25_eval_runtime` and `make release`
+    - Run `./run-sv-comp.rb --pin --job 20 &> svcomp-raw.txt`
+
+
     - From the `rq5-benchmarks`, run `./update_bench_propertimings.rb --i 1 &> plot5-6-raw.txt`
             (By modifying the number supplied after `i`, you can specify that the average of more runs should be taken. To reduce runtimes, we recommend against it when reproducing results)
     - For plot 5
