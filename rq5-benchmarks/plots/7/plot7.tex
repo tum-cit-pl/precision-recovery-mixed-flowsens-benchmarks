@@ -1,0 +1,54 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usetikzlibrary{patterns}
+\usetikzlibrary{calc}
+\colorlet{improved}{green!30}
+\colorlet{worse}{red!85}
+\colorlet{incomparable}{brown!90!white}
+
+\pgfplotscreateplotcyclelist{stackedbar}{
+  {fill=improved},
+  {fill=worse},
+  {fill=incomparable},
+  {preaction={fill, improved}, pattern=north east lines},
+  {preaction={fill, worse}, pattern=north east lines},
+  {preaction={fill, incomparable}, pattern=north east lines},
+  {preaction={fill, improved}, pattern=horizontal lines},
+  {preaction={fill, worse}, pattern=horizontal lines},
+  {preaction={fill, incomparable}, pattern=horizontal lines},
+  {preaction={fill, improved}, pattern=north west lines},
+  {preaction={fill, worse}, pattern=north west lines},
+  {preaction={fill, incomparable}, pattern=north west lines},
+}
+
+\begin{document}
+
+
+\pgfplotstableread[col sep=comma]{plot7-dead.csv}{\tabledeadn}
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=1.95\linewidth,
+      height=0.6*\axisdefaultheight,
+      grid=major,
+      grid style={dashed,gray!30},
+      ymin = 0,
+      ymax = 1,
+      ylabel={fraction of function\\entries set to $\bot$},
+      ylabel style={align=center},
+      yticklabel=\pgfmathparse{100*\tick}\pgfmathprintnumber{\pgfmathresult}\,\%,
+      yticklabel style={/pgf/number format/.cd,fixed,precision=2},
+      enlarge x limits={abs=0.6},
+      ybar stacked,
+      bar width=7pt,
+      xtick=data,
+      xticklabels from table={\tabledeadn}{file},
+      x tick label style={rotate=45,below left},
+      legend style={at={(0.01,0.99)},nodes={scale=0.9},anchor=north west},
+    ]
+    \addplot+ table[x expr=\coordindex, y expr=\thisrow{stillbot}/\thisrow{total}] {\tabledeadn};
+    \addplot+ table[x expr=\coordindex, y expr=(\thisrow{botified}-\thisrow{stillbot})/\thisrow{total}] {\tabledeadn};
+    \legend{,{intermittently trash}},
+    \end{axis}
+  \end{tikzpicture}
+\end{document}

@@ -16,7 +16,7 @@ Steps for reproducing plots `5 & 6`:
         - Run `../helper-scripts/postprocess-csv.py plots/5/plot5-long.csv`
         - Run `../helper-scripts/postprocess-csv.py plots/5/plot5-short.csv`
         - Run `./split-out-fails.py plots/5/plot5-long.csv > plots/5/plot5-long-nofails.csv 2> plots/5/plot5long-fails.csv`
-        - `cd plots/4 && pdflatex plot4.tex && cd..`
+        - `cd plots/5 && pdflatex plot5.tex && cd..`
 
 
 
@@ -27,6 +27,10 @@ Steps for reproducing plots `4 & 7`:
     - For plot 4:
         - Run `./plot4.sh` (Should this fail to the correct output check the individual steps listed in that file)
         - The resulting plot is located in `plots/4/plot4.pdf`
+    - For plot 7:
+        - Run `./plot7.sh` (Should this fail to the correct output check the individual steps listed in that file)
+        - The resulting plot is located in `plots/7/plot7.pdf`
+
 
 
 

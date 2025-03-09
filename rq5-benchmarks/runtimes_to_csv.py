@@ -201,7 +201,7 @@ if mode == "memory":
         print(f'{case.suite},{case.name},{index+1},' + ','.join(memusages))
 
 if mode == "dead":
-    print('suite,file,coordindex,' + ','.join(map(lambda a: f"{a}-stillbot,{a}-botified,{a}-dead,{a}-total", analyses_)))
+    print('suite,file,coordindex,stillbot,botified,dead,total')
     for index, case in enumerate(cases):
         dead = list()
         analysis = "ours-bot"
