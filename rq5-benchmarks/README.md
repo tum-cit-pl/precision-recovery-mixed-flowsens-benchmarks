@@ -16,7 +16,8 @@ Steps for reproducing plots `4 & 7`:
     - For plot 4:
         - Run `./fullpreccmp_to_csv_cumulative.py --mode all --compare glob plot4-7-raw.txt base > plot4-differences.csv`
         - Run `../helper-scripts/postprocess-csv.py plot4-differences.csv`
-        -
+        - `cd plots && pdflatex plot4.tex && cd..`
+        - The resulting plot is located in `plots/plot4.pdf`
 
 
 

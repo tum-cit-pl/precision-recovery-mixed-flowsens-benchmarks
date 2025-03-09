@@ -1,0 +1,76 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usetikzlibrary{patterns}
+\colorlet{improved}{green!30}
+\colorlet{worse}{red!85}
+\colorlet{incomparable}{brown!90!white}
+
+\pgfplotscreateplotcyclelist{stackedbar}{
+  {fill=improved},
+  {fill=worse},
+  {fill=incomparable},
+  {preaction={fill, improved}, pattern=north east lines},
+  {preaction={fill, worse}, pattern=north east lines},
+  {preaction={fill, incomparable}, pattern=north east lines},
+  {preaction={fill, improved}, pattern=horizontal lines},
+  {preaction={fill, worse}, pattern=horizontal lines},
+  {preaction={fill, incomparable}, pattern=horizontal lines},
+  {preaction={fill, improved}, pattern=north west lines},
+  {preaction={fill, worse}, pattern=north west lines},
+  {preaction={fill, incomparable}, pattern=north west lines},
+}
+
+\begin{document}
+
+    \pgfplotstableread[col sep=comma]{../plot4-differences.csv}{\tabledifferences}
+    \begin{tikzpicture}
+      \pgfplotsset{
+        every axis/.style={
+          bar shift=\shift,
+          width=2\textwidth,
+          height=12cm,
+          ybar stacked,
+          bar width=5pt,
+          grid=major,
+          grid style={dashed,gray!30},
+          ymin=0,
+          ymax=0.5,
+          ylabel = {fraction of affected unknowns},
+          ytick distance = 0.1,
+          yticklabel=\pgfmathparse{100*\tick}\pgfmathprintnumber{\pgfmathresult}\,\%,
+          yticklabel style={/pgf/number format/.cd,fixed,precision=2},
+          xtick=data,
+          xticklabels from table={\tabledifferences}{file},
+          x tick label style={rotate=45,below left},
+          enlarge x limits={abs=0.3cm},
+          legend style={font=\small,at={(axis cs:0.05,0.45)},anchor=north west},
+          legend entries={ours,
+                          ours$_\bot$,
+                          apinis,
+                          more precise,
+                          less precise,
+                          incomparable},
+          legend columns = 3,
+        },
+      }
+      \foreach \hide/\index/\a/\shift in {/0/ours/-5pt,hide axis/3/ours-bot/0pt,hide axis/6/apinis/5pt}{
+        \begin{axis}[\hide]
+          \addlegendimage{}
+          \addlegendimage{pattern=north east lines}
+          \addlegendimage{pattern=horizontal lines}
+          \addlegendimage{fill=improved}
+          \addlegendimage{fill=worse}
+          \addlegendimage{fill=incomparable}
+
+          \pgfplotsset{cycle list shift=\index, cycle list name=stackedbar}
+          \addplot table [y=worse-\a, x expr=\coordindex] {\tabledifferences};
+          \addplot table [y=better-\a, x expr=\coordindex] {\tabledifferences};
+          \addplot table [y=incomparable-\a, x expr=\coordindex] {\tabledifferences};
+        \end{axis}
+      }
+    \end{tikzpicture}
+
+
+
+\end{document}
