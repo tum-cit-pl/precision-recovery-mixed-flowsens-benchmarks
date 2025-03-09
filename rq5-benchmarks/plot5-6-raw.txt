@@ -1,0 +1,250 @@
+Locksmith POSIX Apps
+Analysing aget_comb.c (1/49)
+  base                                    -- Done! 2.342019 s (NaN)
+  ours          -- Done! 2.440213 s (NaN)
+  ours_bot -- Done! 2.585971 s (NaN)
+  apinis                     -- Done! 2.372761 s (NaN)
+Analysing knot_comb.c (2/49)
+  base                                    -- Done! 2.967249 s (NaN)
+  ours          -- Done! 3.052543 s (NaN)
+  ours_bot -- Done! 5.901753 s (NaN)
+  apinis                     -- Done! 3.121047 s (NaN)
+Analysing pfscan_comb.c (3/49)
+  base                                    -- Done! 0.987119 s (NaN)
+  ours          -- Done! 1.102842 s (NaN)
+  ours_bot -- Done! 1.122277 s (NaN)
+  apinis                     -- Done! 1.138632 s (NaN)
+Analysing ctrace_comb.c (4/49)
+  base                                    -- Done! 1.803063 s (NaN)
+  ours          -- Done! 1.898714 s (NaN)
+  ours_bot -- Done! 1.963921 s (NaN)
+  apinis                     -- Done! 2.271004 s (NaN)
+Analysing smtprc_comb.c (5/49)
+  base                                    -- Done! 26.065749 s (NaN) 174.560000 MB
+  ours          -- Done! 26.508835 s (NaN) 200.750000 MB
+  ours_bot -- Done! 53.975075 s (NaN) 131.990000 MB
+  apinis                     -- Done! 108.141751 s (NaN) 265.490000 MB
+Larger programs
+Analysing ypbind_comb.c (6/49)
+  base                                    -- Done! 42.193322 s (NaN) 534.020000 MB
+  ours          -- Done! 44.344641 s (NaN) 614.130000 MB
+  ours_bot -- Done! 83.863919 s (NaN) 305.320000 MB
+  apinis                     -- Done! 198.404012 s (NaN) 706.240000 MB
+SV-COMP (ordered by logical LoC within this group)
+Analysing linux-3.14--drivers--usb--misc--iowarrior.ko.cil.i (7/49)
+  base                                    -- Done! 2.358327 s (NaN)
+  ours          -- Done! 2.404226 s (NaN)
+  ours_bot -- Done! 2.654630 s (NaN)
+  apinis                     -- Done! 2.091450 s (NaN)
+Analysing linux-3.14--drivers--usb--misc--adutux.ko.cil.i (8/49)
+  base                                    -- Done! 2.603508 s (NaN)
+  ours          -- Done! 2.741460 s (NaN)
+  ours_bot -- Done! 3.336942 s (NaN)
+  apinis                     -- Done! 2.161844 s (NaN)
+Analysing linux-3.14--drivers--net--irda--w83977af_ir.ko.cil.i (9/49)
+  base                                    -- Done! 4.845644 s (NaN)
+  ours          -- Done! 5.030805 s (NaN)
+  ours_bot -- Done! 5.334840 s (NaN)
+  apinis                     -- Done! 4.470071 s (NaN)
+Analysing linux-3.14--drivers--spi--spi-tegra20-slink.ko.cil.i (10/49)
+  base                                    -- Done! 15.025601 s (NaN) 65.620000 MB
+  ours          -- Done! 15.052826 s (NaN) 75.460000 MB
+  ours_bot -- Done! 17.162325 s (NaN) 65.620000 MB
+  apinis                     -- Done! 12.164941 s (NaN) 75.460000 MB
+Analysing linux-3.14--drivers--net--irda--nsc-ircc.ko.cil.i (11/49)
+  base                                    -- Done! 22.384253 s (NaN) 200.750000 MB
+  ours          -- Done! 21.468418 s (NaN) 230.860000 MB
+  ours_bot -- Done! 25.028537 s (NaN) 151.790000 MB
+  apinis                     -- Done! 23.539830 s (NaN) 174.560000 MB
+Analysing linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-1.i (12/49)
+  base                                    -- Done! 12.728707 s (NaN) 99.800000 MB
+  ours          -- Done! 12.654971 s (NaN) 99.800000 MB
+  ours_bot -- Done! 14.441122 s (NaN) 86.780000 MB
+  apinis                     -- Done! 12.490986 s (NaN) 99.800000 MB
+Analysing linux-3.14--drivers--media--platform--marvell-ccic--cafe_ccic.ko.cil-2.i (13/49)
+  base                                    -- Done! 13.808483 s (NaN) 99.800000 MB
+  ours          -- Done! 15.044855 s (NaN) 99.800000 MB
+  ours_bot -- Done! 17.424893 s (NaN) 75.460000 MB
+  apinis                     -- Done! 14.568634 s (NaN) 86.780000 MB
+concrat
+Analysing axel.c (14/49)
+  base                                    -- Done! 147.501068 s (NaN) 934.010000 MB
+  ours          -- Failed!
+  ours_bot -- Failed!
+  apinis                     -- Failed!
+Analysing brubeck.c (15/49)
+  base                                    -- Done! 5.163391 s (NaN)
+  ours          -- Done! 5.150140 s (NaN)
+  ours_bot -- Done! 5.427435 s (NaN)
+  apinis                     -- Done! 5.625642 s (NaN)
+Analysing cThreadPool.c (16/49)
+  base                                    -- Done! 0.489781 s (NaN)
+  ours          -- Done! 0.485978 s (NaN)
+  ours_bot -- Done! 0.510535 s (NaN)
+  apinis                     -- Done! 0.500626 s (NaN)
+Analysing cava.c (17/49)
+  base                                    -- Done! 10.027582 s (NaN)
+  ours          -- Done! 10.283325 s (NaN)
+  ours_bot -- Done! 11.673435 s (NaN) 75.460000 MB
+  apinis                     -- Done! 12.197332 s (NaN) 86.780000 MB
+Analysing dnspod-sr-fixed.c (18/49)
+  base                                    -- Done! 151.447628 s (NaN) 1074.120000 MB
+  ours          -- Done! 166.330324 s (NaN) 1420.530000 MB
+  ours_bot -- Done! 463.811273 s (NaN) 1074.120000 MB
+  apinis                     -- Failed!
+Analysing dump1090.c (19/49)
+  base                                    -- Done! 6.477293 s (NaN)
+  ours          -- Done! 6.662679 s (NaN)
+  ours_bot -- Done! 6.950176 s (NaN)
+  apinis                     -- Done! 7.336091 s (NaN)
+Analysing easyLogger.c (20/49)
+  base                                    -- Done! 5.925018 s (NaN)
+  ours          -- Done! 6.271561 s (NaN)
+  ours_bot -- Done! 7.949009 s (NaN)
+  apinis                     -- Done! 7.870549 s (NaN)
+Analysing fzy.c (21/49)
+  base                                    -- Done! 66.213709 s (NaN) 6082.760000 MB
+  ours          -- Done! 67.099103 s (NaN) 6082.760000 MB
+  ours_bot -- Done! 78.643335 s (NaN) 6082.760000 MB
+  apinis                     -- Done! 55.618749 s (NaN) 6082.760000 MB
+Analysing klib.c (22/49)
+  base                                    -- Done! 1.894000 s (NaN)
+  ours          -- Done! 2.002817 s (NaN)
+  ours_bot -- Done! 3.215475 s (NaN)
+  apinis                     -- Done! 1.797405 s (NaN)
+Analysing level-ip.c (23/49)
+  base                                    -- Done! 5.273009 s (NaN)
+  ours          -- Done! 6.012719 s (NaN)
+  ours_bot -- Done! 6.360665 s (NaN)
+  apinis                     -- Done! 5.893189 s (NaN)
+Analysing libaco.c (24/49)
+  base                                    -- Done! 13.231471 s (NaN) 82.080000 MB
+  ours          -- Done! 13.560466 s (NaN) 84.610000 MB
+  ours_bot -- Done! 14.262240 s (NaN) 55.630000 MB
+  apinis                     -- Done! 14.637833 s (NaN) 73.570000 MB
+Analysing libfaketime.c (25/49)
+  base                                    -- Done! 0.218750 s (NaN)
+  ours          -- Done! 0.208664 s (NaN)
+  ours_bot -- Done! 0.207818 s (NaN)
+  apinis                     -- Done! 0.204440 s (NaN)
+Analysing libfreenect.c (26/49)
+  base                                    -- Done! 0.832413 s (NaN)
+  ours          -- Done! 0.903921 s (NaN)
+  ours_bot -- Done! 0.925489 s (NaN)
+  apinis                     -- Done! 0.771144 s (NaN)
+Analysing lmdb.c (27/49)
+  base                                    -- Failed!
+  ours          -- Failed!
+  ours_bot -- Failed!
+  apinis                     -- Failed!
+Analysing mirai-fixed.c (28/49)
+  base                                    -- Done! 5.988821 s (NaN)
+  ours          -- Done! 6.212694 s (NaN)
+  ours_bot -- Done! 6.274503 s (NaN)
+  apinis                     -- Done! 6.223265 s (NaN)
+Analysing nnn.c (29/49)
+  base                                    -- Done! 131.372829 s (NaN) 6166.010000 MB
+  ours          -- Done! 139.785790 s (NaN) 6202.500000 MB
+  ours_bot -- Done! 170.789386 s (NaN) 7086.710000 MB
+  apinis                     -- Done! 137.914326 s (NaN) 7263.880000 MB
+Analysing phpspy.c (30/49)
+  base                                    -- Failed!
+  ours          -- Failed!
+  ours_bot -- Failed!
+  apinis                     -- Failed!
+Analysing pianobar.c (31/49)
+  base                                    -- Done! 115.537789 s (NaN) 614.130000 MB
+  ours          -- Done! 120.420978 s (NaN) 706.240000 MB
+  ours_bot -- Done! 147.675917 s (NaN) 614.130000 MB
+  apinis                     -- Done! 202.707848 s (NaN) 812.180000 MB
+Analysing pigz-fixed.c (32/49)
+  base                                    -- Failed!
+  ours          -- Failed!
+  ours_bot -- Failed!
+  apinis                     -- Failed!
+Analysing pingfs.c (33/49)
+  base                                    -- Done! 3.650470 s (NaN)
+  ours          -- Done! 3.790556 s (NaN)
+  ours_bot -- Done! 4.321398 s (NaN)
+  apinis                     -- Done! 4.141759 s (NaN)
+Analysing procDump.c (34/49)
+  base                                    -- Done! 77.965346 s (NaN) 230.860000 MB
+  ours          -- Done! 84.136644 s (NaN) 305.320000 MB
+  ours_bot -- Done! 106.422068 s (NaN) 230.860000 MB
+  apinis                     -- Done! 119.908522 s (NaN) 265.490000 MB
+Analysing remotery.c (35/49)
+  base                                    -- Failed!
+  ours          -- Failed!
+  ours_bot -- Failed!
+  apinis                     -- Failed!
+Analysing shairport.c (36/49)
+  base                                    -- Done! 77.479630 s (NaN) 1934.870000 MB
+  ours          -- Done! 86.545855 s (NaN) 1771.680000 MB
+  ours_bot -- Done! 112.066982 s (NaN) 2045.610000 MB
+  apinis                     -- Done! 146.793016 s (NaN) 2362.250000 MB
+Analysing siege.c (37/49)
+  base                                    -- Done! 45.722326 s (NaN) 464.360000 MB
+  ours          -- Done! 45.807673 s (NaN) 534.020000 MB
+  ours_bot -- Done! 52.804967 s (NaN) 464.360000 MB
+  apinis                     -- Done! 91.346756 s (NaN) 534.020000 MB
+Analysing snoopy.c (38/49)
+  base                                    -- Done! 0.873213 s (NaN)
+  ours          -- Done! 0.899622 s (NaN)
+  ours_bot -- Done! 0.928636 s (NaN)
+  apinis                     -- Done! 0.913856 s (NaN)
+Analysing sshfs.c (39/49)
+  base                                    -- Failed!
+  ours          -- Failed!
+  ours_bot -- Failed!
+  apinis                     -- Failed!
+Analysing streem.c (40/49)
+  base                                    -- Failed!
+  ours          -- Failed!
+  ours_bot -- Failed!
+  apinis                     -- Failed!
+Analysing sysbench-fixed.c (41/49)
+  base                                    -- Done! 20.862098 s (NaN) 200.750000 MB
+  ours          -- Done! 28.063277 s (NaN) 265.490000 MB
+  ours_bot -- Done! 29.759009 s (NaN) 265.490000 MB
+  apinis                     -- Done! 32.618818 s (NaN) 265.490000 MB
+Analysing ag.c (42/49)
+  base                                    -- Failed!
+  ours          -- Failed!
+  ours_bot -- Failed!
+  apinis                     -- Failed!
+Analysing uthash.c (43/49)
+  base                                    -- Done! 3.406795 s (NaN)
+  ours          -- Done! 3.583462 s (NaN)
+  ours_bot -- Done! 3.578220 s (NaN)
+  apinis                     -- Done! 3.468665 s (NaN)
+Analysing vanitygen.c (44/49)
+  base                                    -- Done! 19.199747 s (NaN) 114.770000 MB
+  ours          -- Done! 19.343841 s (NaN) 131.990000 MB
+  ours_bot -- Done! 20.882885 s (NaN) 351.120000 MB
+  apinis                     -- Done! 20.193821 s (NaN) 131.990000 MB
+Analysing wrk.c (45/49)
+  base                                    -- Done! 241.312150 s (NaN) 7290.460000 MB
+  ours          -- Done! 238.752129 s (NaN) 7263.880000 MB
+  ours_bot -- Done! 241.303366 s (NaN) 7263.880000 MB
+  apinis                     -- Done! 236.190895 s (NaN) 7263.880000 MB
+Analysing zmap.c (46/49)
+  base                                    -- Done! 28.043996 s (NaN) 403.790000 MB
+  ours          -- Done! 29.273130 s (NaN) 464.360000 MB
+  ours_bot -- Done! 30.489566 s (NaN) 403.790000 MB
+  apinis                     -- Done! 33.466663 s (NaN) 464.360000 MB
+Excluded concrat (runtime > 15min)
+Analysing airConnect.c (47/49)
+  base                                    -- Failed!
+  ours          -- Failed!
+  ours_bot -- Failed!
+  apinis                     -- Failed!
+Analysing clib.c (48/49)
+  base                                    -- Failed!
+  ours          -- Failed!
+  ours_bot -- Failed!
+  apinis                     -- Failed!
+Analysing minimap2.c (49/49)
+  base                                    -- Failed!
+  ours          -- Failed!
+  ours_bot -- Failed!
+  apinis                     -- Failed!
