@@ -1,0 +1,78 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usetikzlibrary{patterns}
+\usetikzlibrary{calc}
+\colorlet{improved}{green!30}
+\colorlet{worse}{red!85}
+\colorlet{incomparable}{brown!90!white}
+
+\pgfplotscreateplotcyclelist{stackedbar}{
+  {fill=improved},
+  {fill=worse},
+  {fill=incomparable},
+  {preaction={fill, improved}, pattern=north east lines},
+  {preaction={fill, worse}, pattern=north east lines},
+  {preaction={fill, incomparable}, pattern=north east lines},
+  {preaction={fill, improved}, pattern=horizontal lines},
+  {preaction={fill, worse}, pattern=horizontal lines},
+  {preaction={fill, incomparable}, pattern=horizontal lines},
+  {preaction={fill, improved}, pattern=north west lines},
+  {preaction={fill, worse}, pattern=north west lines},
+  {preaction={fill, incomparable}, pattern=north west lines},
+}
+
+\begin{document}
+
+
+\pgfplotstableread[col sep=comma]{plot6-short.csv}{\tabletimingsshort}
+\begin{tikzpicture}
+  \begin{axis} [
+    name=shortheap,
+    width=1.8\textwidth,
+    height=6cm,
+    ybar=\pgflinewidth,
+    bar width=4pt,
+    ymin=0,
+    ylabel={heap memory usage in [MB].},
+    grid=major,
+    grid style={dashed,gray!30},
+    xtick=data,
+    xticklabels from table={\tabletimingsshort}{file},
+    x tick label style={rotate=30,below left},
+    enlarge x limits={abs=0.6cm},
+    legend entries={base,
+      ours,
+      ours$_{\bot}$,
+      apinis},
+    legend pos=north east,
+    legend image code/.code={%
+     \draw[#1,/tikz/.cd,yshift=-0.25em]
+      (0cm,0cm) rectangle (6pt,9pt);},
+  ]
+  \foreach \a in {base,ours,ours_bot,apinis}{
+    \addplot+ table [y=\a-memory, x expr=\coordindex] {\tabletimingsshort};
+  }
+  \end{axis}
+  \pgfplotstableread[col sep=comma]{plot6-long-nofails.csv}{\tabletimingslong}
+  \begin{axis} [
+    at={($(shortheap.east)+(1cm,0)$)},
+    anchor=west,
+    width=0.8\textwidth,
+    height=6cm,
+    ybar=\pgflinewidth,
+    bar width=4pt,
+    ymin=0,
+    grid=major,
+    grid style={dashed,gray!30},
+    xtick=data,
+    xticklabels from table={\tabletimingslong}{file},
+    x tick label style={rotate=30,below left},
+    enlarge x limits={abs=0.6cm},
+  ]
+  \foreach \a in {base,ours,ours_bot,apinis}{
+    \addplot+ table [y=\a-memory, x expr=\coordindex] {\tabletimingslong};
+  }
+  \end{axis}
+\end{tikzpicture}
+\end{document}
