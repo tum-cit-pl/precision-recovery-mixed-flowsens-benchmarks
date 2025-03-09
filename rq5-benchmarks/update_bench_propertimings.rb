@@ -201,6 +201,7 @@ $projects.each do |p|
       tmean = timings[a].reduce(:+) / n
       sum_sqr = timings[a].map {|x| x * x}.reduce(&:+)
       tstd_dev = Math.sqrt((sum_sqr - n * tmean * tmean)/(n-1))
+      tstd_dev = 0.0 if tstd_dev.nan?
       print "-- Done! #{format("%.06f", tmean)} s (#{format("%.06f", tstd_dev)})"
       if memusages[a] != [] then
         n = memusages[a].size.to_f
