@@ -55,9 +55,10 @@
     \addplot+ table [y=\a, x expr=\coordindex] {\tabletimingsshortn};
   }
   \end{axis}
-  \pgfplotstableread[col sep=comma]{plot5-long-nofails.csv}{\tabletimingslongn}
+  \pgfplotstableread[col sep=comma]{plot5-middle.csv}{\tabletimingslongn}
   \begin{axis} [
     at={($(shorttimings.east)+(1cm,0)$)},
+    name=longtimings,
     anchor=west,
     width=0.8\textwidth,
     height=6cm,
@@ -74,6 +75,27 @@
   ]
   \foreach \a in {base,ours,ours-bot,apinis}{
     \addplot+ table [y=\a, x expr=\coordindex] {\tabletimingslongn};
+  }
+  \end{axis}
+  \pgfplotstableread[col sep=comma]{plot5-extra.csv}{\tabletimingslongnn}
+  \begin{axis} [
+    at={($(longtimings.east)+(1cm,0)$)},
+    anchor=west,
+    width=0.2\textwidth,
+    height=6cm,
+    ybar=\pgflinewidth,
+    bar width=4pt,
+    ymin=0,
+    ymax=900,
+    grid=major,
+    grid style={dashed,gray!30},
+    xtick=data,
+    xticklabels from table={\tabletimingslongnn}{file},
+    x tick label style={rotate=30,below left},
+    enlarge x limits={abs=0.3cm},
+  ]
+  \foreach \a in {base,ours,ours-bot,apinis}{
+    \addplot+ table [y=\a, x expr=\coordindex] {\tabletimingslongnn};
   }
   \end{axis}
 \end{tikzpicture}
