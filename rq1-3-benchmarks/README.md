@@ -1,6 +1,6 @@
 Steps:
     - Change into the analyzer repo, run `git checkout pldi25_eval_runtime` and `make release`
-    - Run `./run-sv-comp.rb --pin --job 20 &> svcomp-raw.txt`
+    - Run `./run-sv-comp.rb --pin --clean -j 20 > svcomp-raw.txt 2> progress.txt`
 
 
     - From the `rq5-benchmarks`, run `./update_bench_propertimings.rb --i 1 &> plot5-6-raw.txt`
@@ -36,4 +36,4 @@ Thus, the results from that run can stand in to inspire confidence in the number
 
 ## General setup of sv-comp
 
-- Clone sv-benchmarks at specific tag `svcomp24` into this directory `git clone --branch svcomp24 --depth 1  https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks.git`
+- Clone sv-benchmarks at specific tag `svcomp24` into this directory `git clone --branch svcomp24-final --depth 1  https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks.git`
