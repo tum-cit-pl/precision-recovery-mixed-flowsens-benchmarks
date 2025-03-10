@@ -12,7 +12,8 @@ parser.add_argument('--mode', type=str, nargs='?',
                     help='timing, dead, omitted, memory')
 parser.add_argument('--split', type=float, nargs='?',
                     help='Print every row that has an element exceeding this limit to stderr')
-
+parser.add_argument('--splitProp', type=str, nargs='?',
+                    help='[time],mem')
 
 args = parser.parse_args()
 
@@ -21,9 +22,13 @@ if args.mode == None:
 else:
     mode = args.mode
 
+splitMode = 'time'
+
 split = float('inf')
 if args.split:
     split = args.split
+    if args.splitProp:
+        splitMode = args.splitProp
 
 suite = None
 
@@ -164,13 +169,16 @@ if mode == "timing":
             if time == None:
                 columns.append('')
             else:
-                if time == 'Timeout' or time == 'Failed'  or time > split:
+                if time == 'Timeout' or time == 'Failed'  or (time > split and splitMode == 'time'):
                     toerr = True
                 columns.append(str(time))
             try:
                 memory = case.memory[analysis]
+                if(splitMode == 'mem' and memory > split):
+                    toerr = True
             except:
                 memory = None
+                toerr = True
             if memory == None:
                 columns.append('')
             else:
