@@ -8,9 +8,11 @@ Steps:
     - For plot 5
         - Run `./plot5.sh` (Should this fail to the correct output check the individual steps listed in that file)
         - The resulting plot is located in `plots/5/plot5.pdf`
+        - If you want to generate the plot based on the data we used in the paper call `./plot5.sh --paper`
     - For plot 6
         - Run `./plot6.sh` (Should this fail to the correct output check the individual steps listed in that file)
         - The resulting plot is located in `plots/6/plot6.pdf`
+        - If you want to generate the plot based on the data we used in the paper call `./plot6.sh --paper`
 
 # A list of claims from the paper supported by the artifact, and how/why.
 

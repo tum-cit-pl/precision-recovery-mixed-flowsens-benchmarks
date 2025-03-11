@@ -1,6 +1,10 @@
 #!/bin/bash
 # Extract the data from the raw data file
-./runtimes_to_csv.py --mode timing --split 60 plot5-6-raw.txt > plots/5/plot5-short.csv 2> plots/5/plot5-long.csv
+if [[ "$1" == "--paper" ]]; then
+    ./runtimes_to_csv.py --mode timing --split 60 paper-runs/plot5-6-raw.txt > plots/5/plot5-short.csv 2> plots/5/plot5-long.csv
+else
+    ./runtimes_to_csv.py --mode timing --split 60 plot5-6-raw.txt > plots/5/plot5-short.csv 2> plots/5/plot5-long.csv
+fi
 # Normalize CSV files by renaming benchmarks with long names, sorting etc
 ../helper-scripts/postprocess-csv.py plots/5/plot5-long.csv
 ../helper-scripts/postprocess-csv.py plots/5/plot5-short.csv
