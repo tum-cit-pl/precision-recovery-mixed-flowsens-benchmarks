@@ -18,8 +18,6 @@ Steps for reproducing plots `5 & 6`:
         - Run `./plot6.sh` (Should this fail to the correct output check the individual steps listed in that file)
         - The resulting plot is located in `plots/6/plot6.pdf`
 
-
-
 Steps for reproducing plots `4 & 7`:
     - Change into the analyzer repo, run `git checkout pldi25_eval_stats` and `make release`   (TODO: is prec compare build automatically?)
     - From the `rq5-benchmarks`, run `./update_bench_fullpreccmp.rb --idead --priv-only &> plot4-7-raw.txt`
@@ -31,13 +29,11 @@ Steps for reproducing plots `4 & 7`:
         - The resulting plot is located in `plots/7/plot7.pdf`
 
 
-
+**To re-generate results based on the data we used for the paper, you can supply `--paper` as an argument to any of the `./plotN.sh`**
 
 
 TODO:
 - `bench.txt` should only include the terminating ones, provide a separate file for those that do not
-- Run `update_bench_fullpreccomb.rb` with `--idead` and `--priv-only` for Plot 4
-
 
 
 # A list of claims from the paper supported by the artifact, and how/why.
