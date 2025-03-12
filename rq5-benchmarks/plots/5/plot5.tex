@@ -25,7 +25,7 @@
 \begin{document}
 
 
-\pgfplotstableread[col sep=comma]{plot5-short.csv}{\tabletimingsshortn}
+\pgfplotstableread[col sep=comma]{plot5-extra-short.csv}{\tabletimingsextrashort}
 \begin{tikzpicture}
   \begin{axis} [
     name=shorttimings,
@@ -34,12 +34,12 @@
     ybar=\pgflinewidth,
     bar width=4pt,
     ymin=0,
-    ymax=35,
+    ymax=10,
     ylabel={analysis duration in [s].},
     grid=major,
     grid style={dashed,gray!30},
     xtick=data,
-    xticklabels from table={\tabletimingsshortn}{file},
+    xticklabels from table={\tabletimingsextrashort}{file},
     x tick label style={rotate=30,below left},
     enlarge x limits={abs=0.6cm},
     legend entries={base,
@@ -52,12 +52,34 @@
       (0cm,0cm) rectangle (6pt,9pt);},
   ]
   \foreach \a in {base,ours,ours-bot,apinis}{
-    \addplot+ table [y=\a, x expr=\coordindex] {\tabletimingsshortn};
+    \addplot+ table [y=\a, x expr=\coordindex] {\tabletimingsextrashort};
+  }
+  \end{axis}
+  \pgfplotstableread[col sep=comma]{plot5-middle-low.csv}{\tabletimingsshort}
+  \begin{axis} [
+    at={($(shorttimings.east)+(1cm,0)$)},
+    name=middlelowtimings,
+    anchor=west,
+    width=0.8\textwidth,
+    height=6cm,
+    ybar=\pgflinewidth,
+    bar width=4pt,
+    ymin=0,
+    ymax=35,
+    grid=major,
+    grid style={dashed,gray!30},
+    xtick=data,
+    xticklabels from table={\tabletimingsshort}{file},
+    x tick label style={rotate=30,below left},
+    enlarge x limits={abs=0.6cm},
+  ]
+  \foreach \a in {base,ours,ours-bot,apinis}{
+    \addplot+ table [y=\a, x expr=\coordindex] {\tabletimingsshort};
   }
   \end{axis}
   \pgfplotstableread[col sep=comma]{plot5-middle.csv}{\tabletimingslongn}
   \begin{axis} [
-    at={($(shorttimings.east)+(1cm,0)$)},
+    at={($(middlelowtimings.east)+(1cm,0)$)},
     name=longtimings,
     anchor=west,
     width=0.8\textwidth,

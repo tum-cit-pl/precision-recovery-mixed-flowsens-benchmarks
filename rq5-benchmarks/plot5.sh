@@ -11,5 +11,6 @@ fi
 # Move plots where a run failed to a separate file
 ./split-out-fails.py plots/5/plot5-long.csv > plots/5/plot5-long-nofails.csv 2> plots/5/plot5long-fails.csv
 ./separate-extra-long.py plots/5/plot5-long-nofails.csv > plots/5/plot5-middle.csv 2> plots/5/plot5-extra.csv
+./separate-extra-short.py plots/5/plot5-short.csv > plots/5/plot5-extra-short.csv 2> plots/5/plot5-middle-low.csv
 # Generate the plot
 cd plots/5 && pdflatex plot5.tex && cd ..
