@@ -210,3 +210,27 @@ if mode == "cumulative-diff":
             lastcount = count
     if count != lastcount:
         print(f"{count},{cbetter}")
+
+
+if mode == "cumulative-diff-rec":
+    if not args.analysis2:
+        print("Mode cumulative-diff-rec is only allowed when a second comparison analysis is provided", file=sys.stderr)
+        exit(1)
+    print("count,better")
+    cases = map(flatten_case, cases)
+    cases = sorted(cases, key=lambda x: x.worse-x.better)
+    cbetter = math.inf
+    count = 0
+    lastcount = -1
+    for case in cases:
+        better = case.better
+        worse = case.worse
+        if case.suite in ["recursive", "recursive-simple","recursive-with-pointer","verifythis","recursified_loop-crafted","recursified_loop-invariants","recursified_loop-simple","recursified_nla-digbench"]:
+            count += 1
+            better = better - worse
+            if better != cbetter:
+                cbetter = better
+                print(f"{count},{better}")
+                lastcount = count
+    if count != lastcount:
+        print(f"{count},{cbetter}")

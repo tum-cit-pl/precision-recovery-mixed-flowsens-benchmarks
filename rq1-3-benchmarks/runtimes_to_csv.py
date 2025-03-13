@@ -158,6 +158,33 @@ if mode == "count":
         # specifically more than 10 minutes.
         print(f"\\newcommand\\incomplete{to_command_identifier(analysis)}{{{timeouts[analysis] + failed[analysis]}}}")
 
+if mode == "count-rec":
+    timeouts = {}
+    failed = {}
+    for analysis in analyses:
+        timeouts[analysis] = 0
+        failed[analysis] = 0
+    relevant_case_count = 0
+    discounted_cases = set()
+    for case in cases:
+        if case.suite in ["recursive", "recursive-simple","recursive-with-pointer","verifythis","recursified_loop-crafted","recursified_loop-invariants","recursified_loop-simple","recursified_nla-digbench"]:
+            relevant_case_count += 1
+            for analysis in analyses:
+                time = case.times[analysis]
+                if time == 'Timeout':
+                    timeouts[analysis] += 1
+                    discounted_cases.add(case)
+                elif time == 'Failed':
+                    failed[analysis] += 1
+                    discounted_cases.add(case)
+    print(f'\\newcommand\\casecountrec{{{relevant_case_count}}}')
+    print(f'\\newcommand\\incompleterec{{{len(discounted_cases)}}}')
+    for analysis in analyses:
+        # cannot really separate failures and timeouts, because some of the failures may just be due to the hard timeout
+        # enforced by the timeout command. Sometimes (very rarely), the serialization of precision data takes excessively long,
+        # specifically more than 10 minutes.
+        print(f"\\newcommand\\incompleterec{to_command_identifier(analysis)}{{{timeouts[analysis] + failed[analysis]}}}")
+
 if mode == "timing":
     outstring = ""
     errstring = ""

@@ -14,3 +14,4 @@ rq1-3-benchmarks/**/*.pdf
 rq5-benchmarks/**/*.pdf
 rq1-3-benchmarks/**/*.csv
 rq5-benchmarks/**/*.csv
+timeout-counts.tex
