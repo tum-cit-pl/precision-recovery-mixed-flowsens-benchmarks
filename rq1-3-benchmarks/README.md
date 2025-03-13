@@ -1,6 +1,11 @@
 Steps:
     - Change into the analyzer repo, run `git checkout pldi25_eval_runtime` and `make release`
-    - Run `./run-sv-comp.rb --pin --clean -j 20 > svcomp-raw.txt 2> progress.txt`
+    - Run `./run-sv-comp.rb --pin --clean -j 40 > svcomp-raw.txt 2> progress.txt`
+
+    - For plot 2
+        - `./prec_to_csv_cumulative.py svcomp-raw.txt ours20 base > ours20-vs-base.csv`
+        - `./prec_to_csv_cumulative.py svcomp-raw.txt ours3 base > ours3-vs-base.csv`
+        - `./prec_to_csv_cumulative.py svcomp-raw.txt apinis base > apinis-vs-base.csv`
 
 
     - From the `rq5-benchmarks`, run `./update_bench_propertimings.rb --i 1 &> plot5-6-raw.txt`
