@@ -6,3 +6,11 @@ analyzer/*
 *.fdb_latexmk
 *.synctex.gz
 *.synctex(busy)
+rq1-3-benchmarks/svcomp-raw.txt
+rq1-3-benchmarks/progress.txt
+rq5-benchmarks/plot4-7-raw.txt
+rq5-benchmarks/plot5-6-raw.txt
+rq1-3-benchmarks/**/*.pdf
+rq5-benchmarks/**/*.pdf
+rq1-3-benchmarks/**/*.csv
+rq5-benchmarks/**/*.csv

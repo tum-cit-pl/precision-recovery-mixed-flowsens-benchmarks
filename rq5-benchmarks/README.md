@@ -1,3 +1,6 @@
+Login `goblint:goblint`
+
+
 There are two branches of the `analyzer` repository of relevance here:
 
 - `pldi25_eval_runtime` is to be used with `update_bench_propertimings.rb` to obtain reliable runtimes
@@ -50,7 +53,7 @@ Thus, the results from that run can stand in to inspire confidence in the number
 
 ## General setup of analyzer
 
-- Clone analyzer into top-level directory `git clone git@github.com:goblint/analyzer.git`
+- Clone analyzer into top-level directory `https://github.com/goblint/analyzer.git`
 - `cd analyzer`
 - `git checkout pldi25_eval_stats` (`pldi25_eval_runtime` will do too, dependencies are identical)
 - `make setup`
