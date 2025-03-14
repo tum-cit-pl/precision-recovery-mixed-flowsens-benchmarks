@@ -45,7 +45,7 @@ Plots 4-7: By reproducing them as outlined above
 
     > ours and ours-bot worsen net precision in only three and two cases, respectively, with two cases showing substantial losses for both approaches.
 
-    -  and `./compare.py --paper --compare ours-bot`
+    -  and `./compare.py--compare ours-bot`
 
         (Supplying `--paper` to run with our results)
 
@@ -59,7 +59,14 @@ Plots 4-7: By reproducing them as outlined above
     > The update rule apinis, on the other hand, improves net precision in only 11 cases, with six of these being substantial.
     Conversely, it worsens net precision in 18 cases, with 11 of these precision losses being substantial.
 
-    -  Run `./compare.py --paper --compare apinis`
+    -  Run `./compare.py --compare apinis`
+        (Supplying `--paper` to run with our results)
+
+-
+    > Abstract garbage collection generally comes with a moderate slowdown, but causes a slowdown by a factor of 2.72 in the extreme.
+
+    - From Plot 5 and Running `./overhead.py`
+        (Supplying `--paper` to run with our results)
 
 
 
