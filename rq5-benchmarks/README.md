@@ -68,7 +68,11 @@ Plots 4-7: By reproducing them as outlined above
     - From Plot 5 and Running `./overhead.py`
         (Supplying `--paper` to run with our results)
 
+-
+    > For 18 out of 38 cases, over 40\% of contexts are identified as dead.
 
+    -  Run `./dead-contexts.py`
+        (Supplying `--paper` to run with our results)
 
 TODO:
 - `bench.txt` should only include the terminating ones, provide a separate file for those that do not
