@@ -74,6 +74,11 @@ Plots 4-7: By reproducing them as outlined above
     -  Run `./dead-contexts.py`
         (Supplying `--paper` to run with our results)
 
+    > We find that ours-bot increases memory usage by 15% for two programs, while it yields a reduction for 18 programs. At the extremes, the magnitude of the reduction is considerable. For ypbind and smtprc, e.g., the heap memory footprint is roughly halved.
+
+    - Run `./garbage.py`
+        (Supplying `--paper` to run with our results)
+
 TODO:
 - `bench.txt` should only include the terminating ones, provide a separate file for those that do not
 
