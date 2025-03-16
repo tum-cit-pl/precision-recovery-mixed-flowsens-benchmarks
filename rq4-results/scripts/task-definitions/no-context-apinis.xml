@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-1.9.dtd">
+<!-- <benchmark tool="goblint" timelimit="2 min" hardtimelimit="3 min" memlimit="2 GB" cpuCores="1"> -->
+<benchmark tool="goblint" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="1">
+
+  <resultfiles>**/witness.{graphml,yml}</resultfiles>
+
+  <option name="--conf">configs/no-context-apinis.json</option>
+
+  <rundefinition name="SV-COMP24_unreach-call">
+    <tasks name="ReachSafety-Arrays">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-BitVectors">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-ControlFlow">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-ECA">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Floats">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Heap">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Loops">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-ProductLines">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Recursive">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Sequentialized">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-XCSP">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-XCSP.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Combinations">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-Combinations.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Hardware">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-Hardware.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Hardness">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-Hardness.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="ReachSafety-Fuzzle">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ReachSafety-Fuzzle.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+
+    <tasks name="ConcurrencySafety-Main">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+
+    <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
+      <excludesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64Large-ReachSafety.set</excludesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-DeviceDriversLinux64Large-ReachSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64Large-ReachSafety.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-BusyBox-ReachSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-BusyBox-ReachSafety.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-coreutils-ReachSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-coreutils-ReachSafety.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-uthash-ReachSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-uthash-ReachSafety.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+    <!-- rundefinition name="SV-COMP24_no-data-race">
+    <tasks name="NoDataRace-Main">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/NoDataRace-Main.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+  <rundefinition name="SV-COMP24_valid-memcleanup">
+    <tasks name="MemSafety-MemCleanup">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+  <rundefinition name="SV-COMP24_valid-memsafety">
+    <tasks name="MemSafety-Arrays">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="MemSafety-Heap">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/MemSafety-Heap.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="MemSafety-LinkedLists">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="MemSafety-Other">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/MemSafety-Other.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="MemSafety-Juliet">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/MemSafety-Juliet.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+
+    <tasks name="SoftwareSystems-coreutils-MemSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-coreutils-MemSafety.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-DeviceDriversLinux64-MemSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-MemSafety.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-BusyBox-MemSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-OpenBSD-MemSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-uthash-MemSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-uthash-MemSafety.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+
+    <tasks name="ConcurrencySafety-MemSafety">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ConcurrencySafety-MemSafety.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+  <rundefinition name="SV-COMP24_no-overflow">
+    <tasks name="NoOverflows-Main">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/NoOverflows-Main.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+    <tasks name="NoOverflows-Juliet">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/NoOverflows-Juliet.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+
+    <tasks name="SoftwareSystems-BusyBox-NoOverflows">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-coreutils-NoOverflows">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-coreutils-NoOverflows.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+    <tasks name="SoftwareSystems-uthash-NoOverflows">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/SoftwareSystems-uthash-NoOverflows.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+
+    <tasks name="ConcurrencySafety-NoOverflows">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/ConcurrencySafety-NoOverflows.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    </tasks>
+  </rundefinition>
+
+  <rundefinition name="SV-COMP24_termination">
+    <tasks name="Termination-BitVectors">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/Termination-BitVectors.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-MainControlFlow">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-MainHeap">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/Termination-MainHeap.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+    <tasks name="Termination-Other">
+      <includesfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/Termination-Other.set</includesfile>
+      <propertyfile>/home/goblint/pldi-25/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks/sv-benchmarks/c/properties/termination.prp</propertyfile>
+    </tasks>
+  </rundefinition -->
+</benchmark>
