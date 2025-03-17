@@ -1,0 +1,47 @@
+<!DOCTYPE table PUBLIC "+//IDN sosy-lab.org//DTD BenchExec table 1.10//EN" "https://www.sosy-lab.org/benchexec/table-1.10.dtd">
+<table>
+
+  <!-- <union> groups a set of results which should be placed below each other in the table
+       (instead of side-by-side). The tasks should be distinct in all of the results. -->
+  <union title="ours3">
+    <!-- If each of the result files contains results for the same set of tasks,
+         and all these results should be placed below each other in the table
+         add a unique attribute "id" to the <result> tag
+         and make sure its file pattern matches only one file.
+         The id will be visible as part of the task identifier in the table. -->
+    <result filename="*.results.SV-COMP24_unreach-call.ReachSafety-*.xml.bz2"/>
+    <!-- <column> can be used here to override the global set of columns.
+         But note that <column> can not be used inside <result> tags
+         that are nested in a <union> tag. -->
+  </union>
+    <union title="ours20">
+    <!-- If each of the result files contains results for the same set of tasks,
+         and all these results should be placed below each other in the table
+         add a unique attribute "id" to the <result> tag
+         and make sure its file pattern matches only one file.
+         The id will be visible as part of the task identifier in the table. -->
+    <result filename="../*ours20*/*.results.SV-COMP24_unreach-call.ReachSafety-*.xml.bz2"/>
+    <!-- <column> can be used here to override the global set of columns.
+         But note that <column> can not be used inside <result> tags
+         that are nested in a <union> tag. -->
+  </union>
+      <union title="ours20">
+    <!-- If each of the result files contains results for the same set of tasks,
+         and all these results should be placed below each other in the table
+         add a unique attribute "id" to the <result> tag
+         and make sure its file pattern matches only one file.
+         The id will be visible as part of the task identifier in the table. -->
+     </union>
+     <union title="apinis">
+    <result filename="../*apinis*/*.results.SV-COMP24_unreach-call.ReachSafety-*.xml.bz2"/>
+    <!-- <column> can be used here to override the global set of columns.
+         But note that <column> can not be used inside <result> tags
+         that are nested in a <union> tag. -->
+  </union>
+<union title="base">
+      <result filename="../*base*/*.results.SV-COMP24_unreach-call.ReachSafety-*.xml.bz2"/>
+    <!-- <column> can be used here to override the global set of columns.
+         But note that <column> can not be used inside <result> tags
+         that are nested in a <union> tag. -->
+  </union>
+</table>
