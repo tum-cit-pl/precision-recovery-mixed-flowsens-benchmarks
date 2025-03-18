@@ -59,6 +59,15 @@ As the reviewers requested additional experiments, these instructions refer to r
     - For **RQ5**, follow the instructions in `./rq5-benchmarks/README.md`
 
 
+# Reusability
+
+The Goblint analyzer comes with extensive documentation (see `analyzer/docs`) or (perhaps more conveniently) the [rendered online version](https://goblint.readthedocs.io/). Of particular relevance are:
+
+- The step-to-step user guide and the instructions for running on larger projects (https://goblint.readthedocs.io/en/latest/user-guide/running/#project-analysis). In this way, it is possible to conduct experiments on further programs
+- The accessible step-by-step tutorial on adding custom analyses to the framework at https://goblint.readthedocs.io/en/latest/developer-guide/firstanalysis/. In the interest of a concise file, we opted against inlining this tutorial here.
+- Any newly added analysis will be able to benefit from the update rules provided here.
+
+
 # General setup of analyzer
 
 - Clone analyzer into top-level directory `git clone git@github.com:goblint/analyzer.git`
