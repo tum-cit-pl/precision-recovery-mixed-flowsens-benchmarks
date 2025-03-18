@@ -10,7 +10,6 @@ The folder structure of this artifact (`~/precision-recovery-mixed-flowsens-benc
 - `rq4-results`: Contains the raw data for **RQ4**
 - `rq5-benchmarks`: Contains the instructions to reproduce the evaluation for **RQ5**
 
-- `pldi25-paper-246.pdf`: the paper as submitted in November
 - `new-eval.pdf`: the updated evaluation data
 - `README.md`: this file
 
@@ -43,7 +42,7 @@ The artifact is a virtual machine packaged for `Oracle VirtualBox 6.1`, which is
 
 As the reviewers requested additional experiments, these instructions refer to reproducing the results of the evaluation section as submitted for the second deadline. We thus suggest proceeding in the following manner:
 
-- Verify that the claims between the submitted version from HotCRP (`pldi25-paper246.pdf`) and the updated version (`new-eval.pdf`) do not differ substantially
+- Verify that the claims between the submitted version from HotCRP and the updated version of the evaluation (`new-eval.pdf`) do not differ substantially
 - Verify that this artifact supports the claims from the updated version.
 
 - The steps for reproduction and claims are split by **RQs**, as is the evaluation section.
