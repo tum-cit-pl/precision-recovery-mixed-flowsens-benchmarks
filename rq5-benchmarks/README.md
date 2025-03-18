@@ -57,6 +57,8 @@ As our raw data is used, nothing is to be done.
 
 Plots 4-7: By reproducing them as outlined above
 
+**N.B.**: Runtimes in the VM were observed to be quite a lot slower overall, though the relationship between configurations should still be the same.
+
 **Specific claims:**
 
 -
