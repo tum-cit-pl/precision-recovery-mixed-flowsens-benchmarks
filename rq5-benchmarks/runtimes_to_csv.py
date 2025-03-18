@@ -192,9 +192,8 @@ if mode == "timing":
     for analysis in analyses_:
         column_headers = column_headers + [analysis, analysis + "-memory"]
     for (string, file) in [(outstring, sys.stdout), (errstring, sys.stderr)]:
-        if string != "":
-            print('suite,file,coordindex,' + ','.join(column_headers), file=file)
-            print(string.strip(), file=file)
+        print('suite,file,coordindex,' + ','.join(column_headers), file=file)
+        print(string.strip(), file=file)
 
 if mode == "memory":
     print('suite,file,coordindex,' + ','.join(analyses_))
