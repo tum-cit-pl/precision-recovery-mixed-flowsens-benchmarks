@@ -22,6 +22,11 @@ As our raw data is used, nothing is to be done.
 
     **Expected Runtime**: Around 20min
 
+3. Change into the analyzer repo, run `git checkout pldi25_eval_stats` and `make release`
+4. From the `rq5-benchmarks`, run `./update_bench_fullpreccmp.rb --idead --priv-only --reduced &> plot4-7-raw.txt`
+
+    **Expected Runtime**: Around
+
 **Note:** Those with more patience may add programs from `bench.txt` back to `reduced.txt` to increase the subset of considered programs.
 
 ### Option C
@@ -54,11 +59,13 @@ As our raw data is used, nothing is to be done.
         - Run `./plot7.sh` (Should this fail to the correct output check the individual steps listed in that file)
         - The resulting plot is located in `plots/7/plot7.pdf`
 
+Depending on the runtimes observed in the VM, the `pgfplot` options may need to be modified a little, see the `*.tex` file in the folder `./plots/N`.
+
 ## A list of claims from the paper supported by the artifact, and how/why.
 
 Plots 4-7: By reproducing them as outlined above
 
-**N.B.**: Runtimes in the VM were observed to be quite a lot slower overall, though the relationship between configurations should still be the same.
+**N.B.**: Runtimes in the VM were observed to be quite a lot slower overall, though the relationship between configurations should still roughly be the same.
 
 **Specific claims:**
 
