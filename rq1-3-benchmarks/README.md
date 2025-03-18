@@ -69,7 +69,7 @@ Thus, the results from that run can stand in to inspire confidence in the number
 
 ## General setup of sv-comp
 
-- Clone sv-benchmarks at specific tag `svcomp24` into this directory `git clone --branch svcomp24-final --depth 1  https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks.git`
+- Clone sv-benchmarks at specific tag `svcomp24` into this directory `git clone --branch svcomp24-final --depth 1 https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks.git`
 
 
 ---------------------
