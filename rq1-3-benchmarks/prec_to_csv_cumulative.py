@@ -78,7 +78,7 @@ def do_comparison(line, invert):
 with open(args.file, 'r') as f:
     lines = f.readlines()
     for line in lines:
-        x = re.search('^Analysing (.*) \(.*\)$', line)
+        x = re.search(r'^Analysing (.*) \(.*\)$', line)
         if x != None:
             pushcase()
             case = Case()
@@ -93,7 +93,7 @@ with open(args.file, 'r') as f:
         if x != None:
             case.valid = False
         else:
-            x = re.search('(?:\[31;1;4m)?([^;]+) vs. ([^;]+);', line)
+            x = re.search(r'(?:\[31;1;4m)?([^;]+) vs. ([^;]+);', line)
             if x != None:
                 ac1 = x.group(1)
                 ac2 = x.group(2)
@@ -109,7 +109,7 @@ with open(args.file, 'r') as f:
                         exit(1)
                     case.analyses[other] = comp
 
-        x = re.search('^[-a-zA-Z0-9_ ()]+$', line)
+        x = re.search(r'^[-a-zA-Z0-9_ ()]+$', line)
         if x != None:
             suite = x.group()
 pushcase()
