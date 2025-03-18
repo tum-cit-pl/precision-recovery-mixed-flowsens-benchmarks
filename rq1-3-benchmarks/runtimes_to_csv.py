@@ -63,7 +63,7 @@ for file in args.file:
     with open(file, 'r') as f:
         lines = f.readlines()
         for line in lines:
-            x = re.search('^Analysing (.*) \(.*\)$', line)
+            x = re.search(r'^Analysing (.*) \(.*\)$', line)
             if x != None:
                 pushcase()
                 case = Case()
@@ -98,7 +98,7 @@ for file in args.file:
                 analyses.add(analysis_name)
                 case.times[analysis_name] = 'Failed'
                 continue
-            x = re.search(f'Botified contextualized functions \(still bot,botified,dead,total\): ([0-9]+)\/([0-9]+)\/([0-9]+)\/([0-9]+)', line)
+            x = re.search(r'Botified contextualized functions \(still bot,botified,dead,total\): ([0-9]+)\/([0-9]+)\/([0-9]+)\/([0-9]+)', line)
             if x != None:
                 case.dead[analysis_name] = (int(x.group(1)), int(x.group(2)), int(x.group(3)), int(x.group(4)))
                 continue
