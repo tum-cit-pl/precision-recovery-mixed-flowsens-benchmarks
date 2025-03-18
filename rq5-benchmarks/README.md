@@ -20,6 +20,8 @@ As our raw data is used, nothing is to be done.
 2. From the `rq5-benchmarks`, run `./update_bench_propertimings.rb --i 1 --reduced &> plot5-6-raw.txt`
         (By modifying the number supplied after `i`, you can specify that the average of more runs should be taken. To reduce runtimes, we recommend against it when reproducing results)
 
+**Note:** Those with more patience may add programs from `bench.txt` back to `reduced.txt` to increase the subset of considered programs.
+
 ### Option C
 
 1. Change into the analyzer repo, run `git checkout pldi25_eval_runtime` and `make release`
