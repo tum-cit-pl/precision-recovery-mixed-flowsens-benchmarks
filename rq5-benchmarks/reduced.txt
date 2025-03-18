@@ -27,19 +27,6 @@ Library for tracing multithreaded programs
 pthread/ctrace_comb.c
 -
 
-smtprc
-SMTP Open Relay Checker
-pthread/smtprc_comb.c
--
-
-
-Group: Larger programs
-
-ypbind
-Linux NIS daemon: ypbind-mt
-pthread/ypbind_comb.c
--
-
 
 Group: SV-COMP (ordered by logical LoC within this group)
 
