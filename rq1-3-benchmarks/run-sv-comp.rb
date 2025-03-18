@@ -12,6 +12,7 @@ $gobroot = "../analyzer/"
 $globfilter = ""
 $print_diff = ""
 $pin = false
+$reduced = false
 OptionParser.new do |opt|
   opt.on('--apron') { || $do_apron_cmp = true }
   opt.on('--idead') { || $idead = true }
@@ -23,6 +24,8 @@ OptionParser.new do |opt|
   opt.on('--priv-only', 'Filter globals for privatization') {|| $globfilter = "--set dbg.compare_runs.varfilter[+] privatization" }
   opt.on('--pin', 'Pin each thread to a cpu') {|| $pin = true }
   opt.on('--emit-diff', 'Emit diff in compare files') {|| $print_diff = "--enable dbg.compare_runs.diff"}
+  opt.on('--reduced') { $reduced = true }
+  opt.on('-r') { $reduced = true }
 end.parse!
 
 #Dir.chdir(File.dirname(__FILE__))
@@ -138,6 +141,8 @@ $hard_timeout = $timeout + 600
 
 skipgrp = []
 file = "bench.txt"
+if $reduced then
+  file = "reduced.txt"
 $linuxroot = "https://elixir.bootlin.com/linux/v4.0/source/"
 File.symlink("index/traces.txt",file) unless FileTest.exist? file
 
