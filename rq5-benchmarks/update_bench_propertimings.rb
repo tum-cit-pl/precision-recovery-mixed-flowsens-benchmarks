@@ -90,6 +90,7 @@ skipgrp = []
 file = "bench.txt"
 if $reduced then
   file = "reduced.txt"
+end
 $linuxroot = "https://elixir.bootlin.com/linux/v4.0/source/"
 File.symlink("index/traces.txt",file) unless FileTest.exist? file
 

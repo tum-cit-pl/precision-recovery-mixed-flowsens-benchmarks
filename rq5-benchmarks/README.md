@@ -16,17 +16,19 @@ As our raw data is used, nothing is to be done.
 
 ### Option B
 
-**TODO**
-
+1. Change into the analyzer repo, run `git checkout pldi25_eval_runtime` and `make release`
+2. From the `rq5-benchmarks`, run `./update_bench_propertimings.rb --i 1 --reduced &> plot5-6-raw.txt`
+        (By modifying the number supplied after `i`, you can specify that the average of more runs should be taken. To reduce runtimes, we recommend against it when reproducing results)
 
 ### Option C
 
-- Change into the analyzer repo, run `git checkout pldi25_eval_runtime` and `make release`
-- From the `rq5-benchmarks`, run `./update_bench_propertimings.rb --i 1 &> plot5-6-raw.txt`
+1. Change into the analyzer repo, run `git checkout pldi25_eval_runtime` and `make release`
+2. From the `rq5-benchmarks`, run `./update_bench_propertimings.rb --i 1 &> plot5-6-raw.txt`
         (By modifying the number supplied after `i`, you can specify that the average of more runs should be taken. To reduce runtimes, we recommend against it when reproducing results)
 
-- Change into the analyzer repo, run `git checkout pldi25_eval_stats` and `make release`
-- From the `rq5-benchmarks`, run `./update_bench_fullpreccmp.rb --idead --priv-only &> plot4-7-raw.txt`
+
+3. Change into the analyzer repo, run `git checkout pldi25_eval_stats` and `make release`
+4. From the `rq5-benchmarks`, run `./update_bench_fullpreccmp.rb --idead --priv-only &> plot4-7-raw.txt`
 
 
 ## Producing the plots
