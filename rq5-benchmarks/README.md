@@ -1,13 +1,3 @@
-Login `goblint:goblint`
-
-
-There are two branches of the `analyzer` repository of relevance here:
-
-- `pldi25_eval_runtime` is to be used with `update_bench_propertimings.rb` to obtain reliable runtimes
-- `pldi25_eval_stats` collects additional statistics and is to be used with `update_bench_fullpreccomb.rb` for precision comparisons.
-
-
-In the artifact, `analyzer` is already checked out and dependencies are installed. If not proceed to **General setup of the analyzer** at the bottom.
 
 
 - Steps for reproducing plots `5 & 6`:
@@ -81,14 +71,3 @@ Plots 4-7: By reproducing them as outlined above
 
 TODO:
 - `bench.txt` should only include the terminating ones, provide a separate file for those that do not
-
-
-
-## General setup of analyzer
-
-- Clone analyzer into top-level directory `https://github.com/goblint/analyzer.git`
-- `cd analyzer`
-- `git checkout pldi25_eval_stats` (`pldi25_eval_runtime` will do too, dependencies are identical)
-- `make setup`
-- `make dev`
-- `make release`

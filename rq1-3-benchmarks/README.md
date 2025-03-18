@@ -81,20 +81,7 @@ Run `./run-sv-comp.rb --pin --clean -j 40 > svcomp-raw.txt 2> progress.txt`
     > Regarding (RQ3), the update rule ours yields an improvement on 52% of tasks, regardless of whether the widening limit was set to 3 or 20. However, with a W/N limit of 20, 20% of tasks show substantial improvements, instead of 13% with the limit of 3. On ReachSafety-Recursive, with both limits to the number of W/N switches, an equal amount of precision is recovered (43%).
 
     - See **RQ1**.
-
-
-
-
-
-## General setup of analyzer
-
-- Clone analyzer into top-level directory `git clone git@github.com:goblint/analyzer.git`
-- `cd analyzer`
-- `git checkout pldi25_eval_stats` (`pldi25_eval_runtime` will do too, dependencies are identical)
-- `make setup`
-- `make dev`
-- `make release`
-
+    
 
 ## General setup of sv-comp
 

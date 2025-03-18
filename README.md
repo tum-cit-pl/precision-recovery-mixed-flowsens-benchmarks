@@ -14,6 +14,14 @@ The folder structure of this artifact (`~/precision-recovery-mixed-flowsens-benc
 - `README.md`: this file
 
 
+There are two branches of the `analyzer` repository of relevance here:
+
+- `pldi25_eval_runtime` used to measure runtimes.
+- `pldi25_eval_stats` collects additional statistics but is slower.
+
+In the artifact, `analyzer` is already checked out and dependencies are installed. If not proceed to **General setup of the analyzer** at the bottom.
+
+
 # Getting Started
 
 The artifact is a virtual machine packaged for `Oracle VirtualBox 6.1`, which is available from [Oracle](https://www.virtualbox.org/) and through the package manager of most distributions. The operating system is Ubuntu 24.04 LTS.
@@ -51,7 +59,18 @@ As the reviewers requested additional experiments, these instructions refer to r
     - For **RQ5**, follow the instructions in `./rq5-benchmarks/README.md`
 
 
----------------------
+# General setup of analyzer
+
+- Clone analyzer into top-level directory `git clone git@github.com:goblint/analyzer.git`
+- `cd analyzer`
+- `git checkout pldi25_eval_stats` (`pldi25_eval_runtime` will do too, dependencies are identical)
+- `make setup`
+- `make dev`
+- `make release`
+
+
+
+# Acknowledgments
 
 We would like to thank the anonymous reviewers for their valuable feedback, which was instrumental in polishing the paper.
 DeepSeek was used to help with the creation of scripts for extracting precision data from logfiles.
