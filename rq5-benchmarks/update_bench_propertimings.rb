@@ -13,10 +13,14 @@ $testresults = File.expand_path("bench_result") + "/"
 bench = "./"
 linux = bench + "linux/"
 
+$reduced = false
+
 $iterations = 15
 OptionParser.new do |opt|
   opt.on('--iterations N') { |o| $iterations = o.to_i }
   opt.on('-i N') { |o| $iterations = o.to_i }
+  opt.on('--reduced') { $reduced = true }
+  opt.on('-r') { $reduced = true }
 end.parse!
 
 cmds = {"code2html" => lambda {|f,o| "code2html -l c -n #{f} 2> /dev/null 1> #{o}"},
@@ -84,6 +88,8 @@ end
 
 skipgrp = []
 file = "bench.txt"
+if $reduced then
+  file = "reduced.txt"
 $linuxroot = "https://elixir.bootlin.com/linux/v4.0/source/"
 File.symlink("index/traces.txt",file) unless FileTest.exist? file
 
