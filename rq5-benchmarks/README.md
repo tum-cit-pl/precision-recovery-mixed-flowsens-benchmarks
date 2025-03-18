@@ -25,7 +25,7 @@ As our raw data is used, nothing is to be done.
 3. Change into the analyzer repo, run `git checkout pldi25_eval_stats` and `make release`
 4. From the `rq5-benchmarks`, run `./update_bench_fullpreccmp.rb --idead --priv-only --reduced &> plot4-7-raw.txt`
 
-    **Expected Runtime**: Around
+    **Expected Runtime**: Around 25min
 
 **Note:** Those with more patience may add programs from `bench.txt` back to `reduced.txt` to increase the subset of considered programs.
 

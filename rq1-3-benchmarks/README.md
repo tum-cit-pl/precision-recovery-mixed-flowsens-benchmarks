@@ -23,7 +23,7 @@ As our raw data is used, nothing is to be done.
 
 ### Option B
 
-**TODO**
+Run `./run-sv-comp.rb --pin --clean --reduced > svcomp-raw.txt 2> progress.txt`
 
 
 ### Option C
@@ -43,6 +43,7 @@ Run `./run-sv-comp.rb --pin --clean -j 40 > svcomp-raw.txt 2> progress.txt`
     - Run `./plot3.sh` (Should this fail to the correct output check the individual steps listed in that file)
     - The resulting plot is located in `plots/3/plot3.pdf`
 
+**N.B.** With Option B, only the subset for plot 3 is considered (where the most interesting results are observed). Thus, Plot 2 on this subset is not particularly interesting.
 
 ## A list of claims from the paper supported by the artifact, and how/why.
 
@@ -81,7 +82,7 @@ Run `./run-sv-comp.rb --pin --clean -j 40 > svcomp-raw.txt 2> progress.txt`
     > Regarding (RQ3), the update rule ours yields an improvement on 52% of tasks, regardless of whether the widening limit was set to 3 or 20. However, with a W/N limit of 20, 20% of tasks show substantial improvements, instead of 13% with the limit of 3. On ReachSafety-Recursive, with both limits to the number of W/N switches, an equal amount of precision is recovered (43%).
 
     - See **RQ1**.
-    
+
 
 ## General setup of sv-comp
 
