@@ -10,7 +10,7 @@ The folder structure of this artifact (`~/precision-recovery-mixed-flowsens-benc
 - `rq4-results`: Contains the raw data for **RQ4**
 - `rq5-benchmarks`: Contains the instructions to reproduce the evaluation for **RQ5**
 
-- `new-eval.pdf`: the updated evaluation data
+- `new-eval.pdf`: the updated evaluation section
 - `README.md`: this file
 
 
