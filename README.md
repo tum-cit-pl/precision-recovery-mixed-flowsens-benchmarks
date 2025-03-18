@@ -19,7 +19,7 @@ There are two branches of the `analyzer` repository of relevance here:
 - `pldi25_eval_runtime` used to measure runtimes.
 - `pldi25_eval_stats` collects additional statistics but is slower.
 
-In the artifact, `analyzer` is already checked out and dependencies are installed. If not proceed to **General setup of the analyzer** at the bottom.
+In the artifact, `analyzer` is already checked out and dependencies are installed. If recreating the artifact from scratch proceed to **General setup of the analyzer** at the bottom.
 
 
 # Getting Started
@@ -30,7 +30,7 @@ The artifact is a virtual machine packaged for `Oracle VirtualBox 6.1`, which is
 
 - **Users not using `EN-US` keyboard**: Switch the keyboard layout to match yours by
     - Clicking `en` in the right upper corner and
-    - Choosing your layout if suggested or clicking on `keyboard Settings` to set up another.
+    - Choosing your layout if suggested or clicking on `Keyboard Settings` to set up another.
 
 
 - Verify the analyzer works by
@@ -55,7 +55,7 @@ As the reviewers requested additional experiments, these instructions refer to r
 
 - The steps for reproduction and claims are split by **RQs**, as is the evaluation section.
     - For **RQ1-3**, follow the instructions in `./rq1-3-benchmarks/README.md`
-    - For **RQ4**, see `/rq4-results/README.md`
+    - For **RQ4**, see `./rq4-results/README.md`
     - For **RQ5**, follow the instructions in `./rq5-benchmarks/README.md`
 
 
