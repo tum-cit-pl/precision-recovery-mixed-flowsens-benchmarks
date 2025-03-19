@@ -1,18 +1,19 @@
 # Reproduction of Experiments for RQ1-3
 
-First steps:
-
-- Change into the analyzer repo` cd ..`, run `git checkout pldi25_eval_runtime` and `make release`.
-
 
 There are several levels of reproduction possible here:
 
 - **A**: The folder `paper-runs` contains the data produced by the runs we used for the paper. This allows reproducing the plots and data from our raw results. **(Recommended)**
-- **B**: We provide a subset of the benchmarks (the ones used for Plot 3) which realistically be reproduced inside the VM **(Recommended)**
-- **C**: We provide the scripts for a full reproduction (all 11k SV-COMP programs). This requires a machine with a considerable number `N` of cores so runtime is acceptable, e.g., 40 for the config and at least `15GB*N` of RAM and a runtime of several days (assuming 48n cores). **(Not Recommended)**
+- **B**: We provide a subset of the benchmarks (including the ones used for Plot 3) for which results can realistically be reproduced inside the VM **(Recommended)**
+- **C**: We provide the scripts for a full reproduction (all 11k SV-COMP programs). This requires a machine with a considerable number `N` of cores so runtime is acceptable, e.g., 40 for the config and at least `15GB*N` of RAM and a runtime of several days (assuming N=48 cores). **(Not Recommended)**
 
 
-## Producing the raw data
+In the artifact, `sv-comp` is already checked out at the correct path. If recreating the artifact from scratch proceed to **General setup of SV-COMP** at the bottom.
+
+## Step 1: Producing the raw data
+
+First step: Change into the analyzer repo `cd ..`, run `git checkout pldi25_eval_runtime`, and `make release`.
+Then, change back to this directory.
 
 The raw data here takes the form of a text file `svcomp-raw.txt`. The folder `paper-runs` contains the version of this raw data corresponding to the run in the paper.
 
@@ -23,16 +24,23 @@ As our raw data is used, nothing is to be done.
 
 ### Option B
 
-Run `./run-sv-comp.rb --pin --clean --reduced > svcomp-raw.txt 2> progress.txt`
+From this directory, run `./run-sv-comp.rb --pin --clean --reduced > svcomp-raw.txt 2> progress.txt`
+
+**Expected Runtime**: Around 25min
+
+If you want to keep track of the progress you can open an additional terminal `tail -f progress.text`.
 
 
 ### Option C
 
-Run `./run-sv-comp.rb --pin --clean -j 40 > svcomp-raw.txt 2> progress.txt`
+From this directory, run `./run-sv-comp.rb --pin --clean -j 40 > svcomp-raw.txt 2> progress.txt`
+
+The `-j` parameter provides the number of concurrent runs to execute.
+
+(The runtime here is on the magnitude of days with N=48 cores)
 
 
-
-## Producing the plots
+##  Step 2: Producing the plots
 
 (For **Option A:** pass `--paper` as an additional argument to the scripts)
 
@@ -42,8 +50,6 @@ Run `./run-sv-comp.rb --pin --clean -j 40 > svcomp-raw.txt 2> progress.txt`
 - For plot 3
     - Run `./plot3.sh` (Should this fail to the correct output check the individual steps listed in that file)
     - The resulting plot is located in `plots/3/plot3.pdf`
-
-**N.B.** With Option B, only the subset for plot 3 is considered (where the most interesting results are observed). Thus, Plot 2 on this subset is not particularly interesting.
 
 ## A list of claims from the paper supported by the artifact, and how/why.
 
@@ -84,6 +90,6 @@ Run `./run-sv-comp.rb --pin --clean -j 40 > svcomp-raw.txt 2> progress.txt`
     - See **RQ1**.
 
 
-## General setup of sv-comp
+## General setup of SV-COMP
 
 - Clone sv-benchmarks at specific tag `svcomp24` into this directory `git clone --branch svcomp24-final --depth 1 https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks.git`
