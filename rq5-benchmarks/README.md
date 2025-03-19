@@ -120,7 +120,3 @@ Plots 4-7: By reproducing them as outlined above
 
     - Run `./garbage.py`
     - (For **Option A:** adding `--paper`)
-
-
-TODO:
-- `bench.txt` should only include the terminating ones, provide a separate file for those that do not
