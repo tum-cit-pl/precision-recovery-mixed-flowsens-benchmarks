@@ -34,7 +34,7 @@ As our raw data is used, nothing is to be done.
 
 From this directory, run `./run-sv-comp.rb --pin --clean --reduced > svcomp-raw.txt 2> progress.txt`
 
-**Expected Runtime**: Around 25min
+**Expected Runtime**: Around 1h40min
 
 If you want to keep track of the progress you can open an additional terminal `tail -f progress.text`.
 
