@@ -1,5 +1,17 @@
 # Reproduction of Experiments for RQ5
 
+The folder structure for this RQ (`~/precision-recovery-mixed-flowsens-benchmarks/rq5-benchmarks`) is as follows:
+
+- `concrat`: The benchmark programs assembled by [Hong and Ryu 2023]
+- `pthread`: The pthread benchmark programs from [Schwarz et al. 2021, 2023b]
+- `svcomp`: The device driver benchmark programs from [Schwarz et al. 2021, 2023b]
+- `paper-runs`: Folder containing the raw data of the runs underlying the plots in the paper
+- `plots`: Tex files with pgplots plots for plotting results
+- `bench.txt`: Specifies the full list of benchmark programs
+- `reduced.txt`: Specifies the reduced list of benchmark programs recommended for reproduction
+- Various Ruby / Python / Shell scripts
+
+
 There are several levels of reproduction possible here:
 
 - **A**: The folder `paper-runs` contains the data produced by the runs we used for the paper. This allows reproducing the plots and data from our raw results. **(Recommended)**
