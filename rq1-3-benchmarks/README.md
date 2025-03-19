@@ -1,5 +1,13 @@
 # Reproduction of Experiments for RQ1-3
 
+The folder structure for this RQ (`~/precision-recovery-mixed-flowsens-benchmarks/rq1-3-benchmarks`) is as follows:
+
+- `paper-runs`: Folder containing the raw data of the runs underlying the plots in the paper
+- `plots`: Tex files with pgplots plots for plotting results
+- `bench.txt`: Specifies the full list of benchmark programs
+- `reduced.txt`: Specifies the reduced list of benchmark programs recommended for reproduction
+- Various Ruby / Python / Shell scripts
+
 
 There are several levels of reproduction possible here:
 
@@ -92,4 +100,4 @@ The `-j` parameter provides the number of concurrent runs to execute.
 
 ## General setup of SV-COMP
 
-- Clone sv-benchmarks at specific tag `svcomp24` into this directory `git clone --branch svcomp24-final --depth 1 https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks.git`
+- Clone sv-benchmarks at specific tag `svcomp24` into the parent director directory `git clone --branch svcomp24-final --depth 1 https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks.git`
