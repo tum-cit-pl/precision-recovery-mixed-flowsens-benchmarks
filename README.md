@@ -1,4 +1,4 @@
-This is the artifact accompanying the conditionally accepted PLDI'25 paper **Taking out the Toxic Trash: Recovering Precision in Mixed Flow-Sensitive Static Analyses**.
+This is the artifact accompanying the conditionally accepted PLDI'25 paper **Taking out the Toxic Trash: Recovering Precision in Mixed Flow-Sensitive Static Analyses** by F. Stemmler, M. Schwarz, J. Erhard, S. Tilscher, and H. Seidl.
 
 **The system called `WizWoz` in the paper for double-blind review is in fact [Goblint](https://goblint.in.tum.de).**
 
@@ -48,7 +48,7 @@ The artifact is a virtual machine packaged for `Oracle VirtualBox 6.1`, which is
 
 # Step-by Step Reproduction
 
-As the reviewers requested additional experiments, these instructions refer to reproducing the results of the evaluation section as submitted for the second deadline. We thus suggest proceeding in the following manner:
+As the reviewers of the paper requested additional experiments, these instructions refer to reproducing the results of the evaluation section as submitted for the second deadline. We thus suggest proceeding in the following manner:
 
 - Verify that the claims between the submitted version from HotCRP and the updated version of the evaluation (`new-eval.pdf`) do not differ substantially
 - Verify that this artifact supports the claims from the updated version.
@@ -63,7 +63,7 @@ As the reviewers requested additional experiments, these instructions refer to r
 
 The Goblint analyzer comes with extensive documentation (see `analyzer/docs`) or (perhaps more conveniently) the [rendered online version](https://goblint.readthedocs.io/). Of particular relevance are:
 
-- The step-to-step user guide and the instructions for running on larger projects (https://goblint.readthedocs.io/en/latest/user-guide/running/#project-analysis). In this way, it is possible to conduct experiments on further programs
+- The step-to-step user guide and the instructions for running on larger projects (https://goblint.readthedocs.io/en/latest/user-guide/running/#project-analysis). In this way, it is possible to conduct experiments on further programs.
 - The accessible step-by-step tutorial on adding custom analyses to the framework at https://goblint.readthedocs.io/en/latest/developer-guide/firstanalysis/. In the interest of a concise file, we opted against inlining this tutorial here.
 - Any newly added analysis will be able to benefit from the update rules provided here.
 
