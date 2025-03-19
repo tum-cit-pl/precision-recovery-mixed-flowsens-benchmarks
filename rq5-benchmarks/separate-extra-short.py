@@ -34,8 +34,8 @@ def process_csv(filename):
                 sys.stderr.write(f"Error processing row {row}: {str(e)}\n")
                 continue
 
-            # Check if any value exceeds 10
-            if any(val > 10 for val in [apinis, base, ours, ours_bot]):
+            # Check if any value exceeds 9
+            if any(val > 9 for val in [apinis, base, ours, ours_bot]):
                 stderr_writer.writerow(row)
             else:
                 stdout_writer.writerow(row)
