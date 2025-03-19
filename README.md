@@ -26,6 +26,8 @@ In the artifact, `analyzer` is already checked out and dependencies are installe
 
 The artifact is a virtual machine packaged for `Oracle VirtualBox 6.1`, which is available from [Oracle](https://www.virtualbox.org/) and through the package manager of most distributions. The operating system is Ubuntu 24.04 LTS.
 
+- For help importing the virtual machine, see https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html
+
 - The login is `goblint:goblint`.
 
 - **Users not using `EN-US` keyboard**: Switch the keyboard layout to match yours by
