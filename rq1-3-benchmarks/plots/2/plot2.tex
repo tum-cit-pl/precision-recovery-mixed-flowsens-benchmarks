@@ -1,6 +1,15 @@
 \documentclass{standalone}
+\usepackage{xcolor}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
+
+\definecolor{T-Q-B1}{RGB}{68,119,170} % T-Q-B1 from colorblind package
+\definecolor{T-Q-B2}{RGB}{102,204,238}
+\definecolor{T-Q-B3}{RGB}{34,136,51}
+\definecolor{T-Q-B4}{RGB}{204,187,68}
+\definecolor{T-Q-B5}{RGB}{238,102,119}
+\definecolor{T-Q-B6}{RGB}{170,51,119}
+
 \usepgfplotslibrary{fillbetween}
 \usetikzlibrary{patterns}
 \usetikzlibrary{calc}
@@ -24,9 +33,9 @@
 }
 
 \pgfplotscreateplotcyclelist{graydiscernable}{
-  {blue},
-  {green!40!white},
-  {red!80!white},
+  {T-Q-B3},
+  {T-Q-B4},
+  {T-Q-B5},
 }
 
 
@@ -72,11 +81,11 @@
     \addplot+[opacity=0.2,forget plot] fill between[of=CWTH and CWTHZA];
     \pgfplotsset{cycle list shift=0}
 
-    \addplot+[const plot mark left,mark=none,densely dashdotted,thick,name path=CWTW]
+    \addplot+[const plot mark left,mark=none,densely dotted,thick,name path=CWTW]
       table[x=count,y=better] {\tablecwtw};
     \addlegendentry{ours$_{20}$};
     \pgfplotsset{cycle list shift=-1}
-    \addplot+[const plot mark left,forget plot,mark=none,densely dashdotted,opacity=0.5,name path=CWTWZA]
+    \addplot+[const plot mark left,forget plot,mark=none,densely dotted,opacity=0.5,name path=CWTWZA]
     table[x=count,y=better] {\tablecwtwza};
     \addplot+[opacity=0.2,forget plot] fill between[of=CWTW and CWTWZA];
     \pgfplotsset{cycle list shift=0}
