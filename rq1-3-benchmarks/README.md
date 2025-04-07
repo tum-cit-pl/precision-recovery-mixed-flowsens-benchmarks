@@ -98,6 +98,83 @@ The `-j` parameter provides the number of concurrent runs to execute.
     - See **RQ1**.
 
 
+## Expected Output for Option B
+
+By necessity, the results on this set do not fully coincide with the results on the full set. The subset for **B** was constructed to contain all the cases needed for _full_ reproduction of the recursive subset, and by then subsequently adding categories while making sure the overall runtime inside the artifact remains acceptable. Unfortunately, a subset showing all effects but still having a reasonable runtime remained elusive.
+
+Nevertheless, we expect that these experiments, together with the extraction from the logs (Option **A**) and the fact that the recursive set is fully reproduced, inspire confidence in our overall experimental setup and results without having to take on the burden of a full reproduction involving multiple days of runtime on highly parallel machines.
+
+
+- Plots: See directory `plots/b_{2,3}`
+- Total number of tasks and terminating task:
+    - `plots/b_2/timeout-counts.tex`
+    - The subset was chosen to not include any tasks where the 15min timeout is hit to avoid excessive runtimes
+
+- Expected output for `./compare.py --compare ours3`
+
+```
+Total entries: 992
+improved (> 0%) : 172 (17.34%)
+improved significantly (>= 5%) : 162 (16.33%)
+worsened (< 0%) : 55 (5.54%)
+worsened significantly (<= -5%) : 42 (4.23%)
+```
+
+- Expected output for `./compare.py --compare ours20`
+
+
+```
+Total entries: 992
+improved (> 0%) : 172 (17.34%)
+improved significantly (>= 5%) : 162 (16.33%)
+worsened (< 0%) : 55 (5.54%)
+worsened significantly (<= -5%) : 42 (4.23%)
+```
+
+
+- Expected output for `./compare.py --compare ours3 --rec`
+
+```
+Total entries: 156
+improved (> 0%) : 67 (42.95%)
+improved significantly (>= 5%) : 66 (42.31%)
+worsened (< 0%) : 8 (5.13%)
+worsened significantly (<= -5%) : 8 (5.13%)
+```
+
+- Expected output for `./compare.py --compare ours20 --rec`
+
+
+```
+Total entries: 156
+improved (> 0%) : 67 (42.95%)
+improved significantly (>= 5%) : 66 (42.31%)
+worsened (< 0%) : 8 (5.13%)
+worsened significantly (<= -5%) : 8 (5.13%)
+```
+
+- Expected output for `./compare.py --compare apinis`
+
+```
+Total entries: 992
+improved (> 0%) : 90 (9.07%)
+improved significantly (>= 5%) : 71 (7.16%)
+worsened (< 0%) : 293 (29.54%)
+worsened significantly (<= -5%) : 291 (29.33%)
+```
+
+- Expected output for `./compare.py --compare apinis --rec`
+
+```
+Total entries: 156
+improved (> 0%) : 37 (23.72%)
+improved significantly (>= 5%) : 34 (21.79%)
+worsened (< 0%) : 22 (14.10%)
+worsened significantly (<= -5%) : 20 (12.82%)
+```
+
+
+
 ## General setup of SV-COMP
 
 - Clone sv-benchmarks at specific tag `svcomp24` into the parent director directory `git clone --branch svcomp24-final --depth 1 https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks.git`
