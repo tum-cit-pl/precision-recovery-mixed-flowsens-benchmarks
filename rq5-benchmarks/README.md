@@ -120,3 +120,69 @@ Plots 4-7: By reproducing them as outlined above
 
     - Run `./garbage.py`
     - (For **Option A:** adding `--paper`)
+
+## Expected Output for Option B
+
+- Plots: See directory `plots/b_{4,5,6,7}`
+
+- Expected output for `./compare.py --compare ours`
+
+```
+Total entries: 11
+improved (> 0%) : 4 (36.36%)
+improved significantly (>= 5%) : 1 (9.09%)
+worsened (< 0%) : 1 (9.09%)
+worsened significantly (<= -5%) : 0 (0.00%)
+```
+
+- Expected output for `./compare.py --compare ours-bot`
+
+```
+Total entries: 11
+improved (> 0%) : 10 (90.91%)
+improved significantly (>= 5%) : 3 (27.27%)
+worsened (< 0%) : 0 (0.00%)
+worsened significantly (<= -5%) : 0 (0.00%)
+```
+
+- Expected output for `./compare.py --compare apinis`
+
+```
+Total entries: 11
+improved (> 0%) : 3 (27.27%)
+improved significantly (>= 5%) : 2 (18.18%)
+worsened (< 0%) : 2 (18.18%)
+worsened significantly (<= -5%) : 1 (9.09%)
+```
+
+- Expected output for `./overhead.py`
+
+```
+Maximal overhead of 'ours-bot' over 'ours': 1.79
+Corresponding row: {'suite': 'SV-COMP (ordered by logical LoC within this group)', 'file': 'marvell2', 'coordindex': '11', 'ours': '33.537565', 'ours-memory': '132.0', 'apinis': '39.773272', 'apinis-memory': '114.78', 'ours-bot': '60.106936', 'ours-bot-memory': '114.78', 'base': '39.964723', 'base-memory': '132.0'}
+```
+
+- Expected output for `./dead-contexts.py`
+
+```
+Total entries: 11
+40% or more identified : 4
+```
+
+- Expected output for `./garbage.py`
+
+```
+Memory usage of ours-bot as fraction of ours for tegra20 : 0.76
+Memory usage of ours-bot as fraction of ours for marvell1 : 0.76
+Memory usage of ours-bot as fraction of ours for marvell2 : 0.87
+Memory usage of ours-bot as fraction of ours for nsc : 0.76
+Memory usage of ours-bot as fraction of ours for adutux : 1.00
+Memory usage of ours-bot as fraction of ours for iowarrior : 0.87
+Memory usage of ours-bot as fraction of ours for w83977af : 1.00
+Memory usage of ours-bot as fraction of ours for ctrace : 1.00
+Memory usage of ours-bot as fraction of ours for pfscan : 0.87
+Memory usage of ours-bot as fraction of ours for knot : 1.00
+Memory usage of ours-bot as fraction of ours for aget : 0.87
+Gain: 3
+Loss: 0
+```
