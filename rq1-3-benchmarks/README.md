@@ -102,6 +102,10 @@ The `-j` parameter provides the number of concurrent runs to execute.
 
 By necessity, the results on this set do not fully coincide with the results on the full set. The subset for **B** was constructed to contain all the cases needed for _full_ reproduction of the recursive subset, and by then subsequently adding categories while making sure the overall runtime inside the artifact remains acceptable. Unfortunately, a subset showing all effects but still having a reasonable runtime remained elusive.
 
+SV-COMP has large groups of benchmarks that share similar characteristics, and the choice of whether these are included into the subset or not makes a huge difference for the observed numbers on the subset.
+A detailed investigation of what separates those tasks where effects can be observed from those where no or only small effects can be observed is certainly interesting. However, we think it is a topic for future work,
+and deem it to be out of scope for the artifact evaluation.
+
 Nevertheless, we expect that these experiments, together with the extraction from the logs (Option **A**) and the fact that the recursive set is fully reproduced, inspire confidence in our overall experimental setup and results without having to take on the burden of a full reproduction involving multiple days of runtime on highly parallel machines.
 
 
