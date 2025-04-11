@@ -29,7 +29,7 @@ processed_data = []
 for row in csv_reader:
     # Subtract `worse` from `better` to get the new `better`
     dead = float(row['stillbot']) / float(row['total'])
-    if dead >= 0.6:
+    if dead >= 0.4:
         deads += 1
     all += 1
 
