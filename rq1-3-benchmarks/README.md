@@ -178,6 +178,37 @@ worsened significantly (<= -5%) : 20 (12.82%)
 ```
 
 
+To further understand why these numbers differ from the ones observed in the overall set, one may additionally run `./compare_per_cat.py --compare ours20 --paper` where `ours20` can be replaced with any of the other options.
+One can observe that the impact of our update rules varies widely within these suites as provided by SV-COMP. Our hypothesis is that programs placed in the same category are roughly similar, though we have not yet investigated
+how program properties relate to precision gains.
+
+For an example where there was quite a lot of improvements consider, e.g., the following two suites.
+
+```
+Suite: eca-rers2012
+Total entries: 960
+improved (> 0%) : 960 (100.00%)
+improved significantly (>= 5%) : 960 (100.00%)
+worsened (< 0%) : 0 (0.00%)
+worsened significantly (<= -5%) : 0 (0.00%)
+```
+
+```
+Suite: hardness-nfm22
+Total entries: 4005
+improved (> 0%) : 3326 (83.05%)
+improved significantly (>= 5%) : 228 (5.69%)
+worsened (< 0%) : 0 (0.00%)
+worsened significantly (<= -5%) : 0 (0.00%)
+```
+
+Unfortunately, the runtime for these tasks alone are greater than 195h (eca-rers2012), respectively 4h (hardness-nfm22). (To get runtimes per category one can run `./runtimes_per_cat.py --paper`).
+We deemed such runtimes to be too high for the artifact review, and thus did not include them in option **B**.
+The exclusion of `hardness-nfm22` already goes a long way towards explaining why the subset shows fewer non-significant improvements.
+
+To include these, a reviewer may copy over these tasks from `bench.txt` into `reduced.txt`.
+
+
 
 ## General setup of SV-COMP
 
