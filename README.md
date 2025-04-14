@@ -12,6 +12,7 @@ The folder structure of this artifact (`~/precision-recovery-mixed-flowsens-benc
 
 - `new-eval.pdf`: the updated evaluation section
 - `README.md`: this file
+- `CODE.md`: A description of the changes made to Goblint.
 
 
 There are two branches of the `analyzer` repository of relevance here:
