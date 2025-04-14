@@ -97,4 +97,4 @@ To this end, it suffices to modify the respective `bench.txt` files by, e.g.,
 
 We would like to thank the anonymous reviewers for their valuable feedback, which was instrumental in polishing the paper.
 DeepSeek was used to help with the creation of scripts for extracting precision data from logfiles.
-This work was supported in part by the Shota Rustaveli National Science Foundation of Georgia (FR-21-7973) and by Deutsche Forschungsgemeinschaft (DFG) -- 378803395/2428 ConVeY.
+This work was supported in part by Deutsche Forschungsgemeinschaft (DFG) -- 378803395/2428 ConVeY.
