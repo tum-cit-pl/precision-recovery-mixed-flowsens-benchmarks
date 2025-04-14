@@ -77,6 +77,11 @@ The Goblint analyzer comes with extensive documentation (see `analyzer/docs`) or
 Thus, the framework can serve as a testbed for new ideas for static analysis, allowing researchers to focus on the aspect of the system they are interested on while relying on the framework for everything else.
 The changes made to Goblint to implement the update rules are outlined in [CODE.md](CODE.md).
 
+### Example
+
+We added an example program `example.c` to the top folder of `analyzer` to highlight precision differences between configurations.
+For details see [EXAMPLE.md](EXAMPLE.md).
+
 ## Experiment with further programs within this VM
 
 All scripts are written in a way where it is easy to add further programs to the setup, or experiment with different settings and analyses.
