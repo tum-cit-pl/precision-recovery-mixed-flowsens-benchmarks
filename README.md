@@ -74,6 +74,7 @@ The Goblint analyzer comes with extensive documentation (see `analyzer/docs`) or
 - Any newly added analysis will be able to benefit from the update rules provided here.
 
 Thus, the framework can serve as a testbed for new ideas for static analysis, allowing researchers to focus on the aspect of the system they are interested on while relying on the framework for everything else.
+The changes made to Goblint to implement the update rules are outlined in [CODE.md](CODE.md).
 
 ## Experiment with further programs within this VM
 
