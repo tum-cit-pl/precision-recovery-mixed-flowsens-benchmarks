@@ -7,6 +7,9 @@ In the following, we describe the changes that can be seen at this URL in more d
 
 #### Update Rules in `src/solver/td3.ml`:
 The update rules where added to the top-down solver that is implemented in `td3.ml`.
+The version of the top-down solver is described in ["The Top-Down Solver—An Exercise in A²I"](https://link.springer.com/chapter/10.1007/978-981-19-9601-6_9).
+A version of the top-down solver for side-effecting constraint systems (TD_{side}) is described in ["Three Improvements to the Top-Down Solver"](https://doi.org/10.1017/S0960129521000499); this description is closer to the implementation in Goblint.
+
 There are some peculiarities in Goblint in the implementation of side-effecting constraint systems for dealing with mixed flow-sensitivity that make the implementation of the update rules more challenging.
 
 In particular:
