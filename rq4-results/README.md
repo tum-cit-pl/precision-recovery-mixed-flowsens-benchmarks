@@ -4,7 +4,7 @@ In this folder, we provide the resulting tables from runs on SV-COMP controlled 
 
 ### A list of claims from the paper supported by the artifact, and how/why.
 
-> Overall, the analyses have almost identical runtimes on the tasks when they terminate. An exception is the configuration ainis, for which quite a few outliers with high runtime overheads are observed.
+> Overall, the analyses have almost identical runtimes on the tasks when they terminate. An exception is the configuration apinis, for which quite a few outliers with high runtime overheads are observed.
 
 - Open `table-generator.table.html` and navigate to the tab titled `Scatter Plot`.
 - Change `Correct only` for `Results:` to `All`.
