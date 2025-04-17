@@ -212,11 +212,16 @@ if mode == "dead":
     print('suite,file,coordindex,stillbot,botified,dead,total')
     for index, case in enumerate(cases):
         dead = list()
-        analysis = "ours-bot"
+        analysis = "ours-bot-rec"
         if not analysis in case.dead:
             continue
-        adead = case.dead[analysis]
-        astillbot,abotified,adead,atotal = adead
+        recdead = case.dead[analysis]
+        otherdead = case.dead["ours-bot"]
+        if recdead != otherdead:
+            print(f"Warning: {case.name} has different dead counts for {analysis} and ours-bot", file=sys.stderr)
+            print(f"Dead with ours-bot-rec: {recdead}", file=sys.stderr)
+            print(f"Dead with ours-bot: {otherdead}", file=sys.stderr)
+        astillbot,abotified,adead,atotal = recdead
         dead.append(f"{astillbot},{abotified},{adead},{atotal}")
         print(f'{case.suite},{case.name},{index+1},' + ','.join(dead))
 
