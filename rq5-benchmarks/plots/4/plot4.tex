@@ -48,14 +48,14 @@
           legend style={font=\small,at={(axis cs:0.05,0.3)},anchor=north west},
           legend entries={ours,
                           ours$_\bot$,
-                          apinis,
+                          ours$_{\bot,\textsf{rec}}$,
                           more precise,
                           less precise,
                           incomparable},
           legend columns = 3,
         },
       }
-      \foreach \hide/\index/\a/\shift in {/0/ours/-5pt,hide axis/3/ours-bot/0pt,hide axis/6/apinis/5pt}{
+      \foreach \hide/\index/\a/\shift in {/0/ours/-5pt,hide axis/3/ours-bot/0pt,hide axis/6/ours-bot-rec/5pt}{
         \begin{axis}[\hide]
           \addlegendimage{}
           \addlegendimage{pattern=north east lines}
