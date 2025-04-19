@@ -15,7 +15,7 @@ There are some peculiarities in Goblint in the implementation of side-effecting 
 In particular:
 - In Goblint, the evaluation of a right-hand side may throw exceptions that indicate that the contribution yields `Deadcode`.
 - Side-effects occur *during* the evaluation of a right-hand side.
-- During the evaluation of a right-hand side, *multiple* side-effects to the same unkonwn may occur.
+- During the evaluation of a right-hand side, *multiple* side-effects to the same unknown may occur.
 - Some side-effected contributions are performed at the beginning as a setup with no origin associated to them. We call these *orphaned* contributions.
 
 These additional challenges are reflected in the code changes in the `td3.ml` file.
