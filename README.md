@@ -1,6 +1,4 @@
-This is the artifact accompanying the conditionally accepted PLDI'25 paper **Taking out the Toxic Trash: Recovering Precision in Mixed Flow-Sensitive Static Analyses** by F. Stemmler, M. Schwarz, J. Erhard, S. Tilscher, and H. Seidl.
-
-**The system called `WizWoz` in the paper for double-blind review is in fact the static analyzer [Goblint](https://goblint.in.tum.de) for multi-threaded programs which is developed by Vesal Vojdani's group at UTartu and Helmut Seidl's group at TUM.**
+This is the artifact accompanying the PLDI'25 paper **Taking out the Toxic Trash: Recovering Precision in Mixed Flow-Sensitive Static Analyses** by F. Stemmler, M. Schwarz, J. Erhard, S. Tilscher, and H. Seidl.
 
 The folder structure of this artifact (`~/precision-recovery-mixed-flowsens-benchmarks`) is as follows:
 
@@ -10,7 +8,6 @@ The folder structure of this artifact (`~/precision-recovery-mixed-flowsens-benc
 - `rq4-results`: Contains the raw data for **RQ4**
 - `rq5-benchmarks`: Contains the instructions to reproduce the evaluation for **RQ5**
 
-- `new-eval.pdf`: the updated evaluation section
 - `README.md`: this file
 - `CODE.md`: A description of the changes made to Goblint.
 
@@ -51,12 +48,7 @@ The artifact is a virtual machine packaged for `Oracle VirtualBox 6.1`, which is
 
 # Step-by Step Reproduction
 
-As the reviewers of the paper requested additional experiments, these instructions refer to reproducing the results of the evaluation section as submitted for the second deadline. We thus suggest proceeding in the following manner:
-
-- Verify that the claims between the submitted version from HotCRP and the updated version of the evaluation (`new-eval.pdf`) do not differ substantially
-- Verify that this artifact supports the claims from the updated version.
-
-- The steps for reproduction and claims are split by **RQs**, as is the evaluation section.
+The steps for reproduction and claims are split by **RQs**, as is the evaluation section.
     - For **RQ1-3**, follow the instructions in `./rq1-3-benchmarks/README.md`
     - For **RQ4**, see `./rq4-results/README.md`
     - For **RQ5**, follow the instructions in `./rq5-benchmarks/README.md`
